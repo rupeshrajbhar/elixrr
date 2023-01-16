@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="#000" />
+    <title>Elixrr</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <!--    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/g5/favicon.png" />
+  </head>
+
+  <body>
+    <section class="section_1">
+      <div class="banner_slider overflow_h">
+        <div class="slider">
+          <picture>
+            <source
+              media="(max-width:767px)"
+              srcset="img/home/mobile_slider_1.jpg"
+              alt=""
+            />
+            <img
+              src="img/home/dekstop_banner.jpg"
+              class="img-responsive width_100"
+            />
+          </picture>
+          <div class="slider_info text_center">
+            <h2 class="text_xxxxl color_white n_b">
+              Elixrr for your <br class="hidden-xs" />
+              nonwoven goods
+            </h2>
+            <h3 class="text_l color_white n_r">To make the future greener for generations to come</h3>
+            <div class="btn_section pt_30">
+              <a href="#" class="primary_btn text_sm">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scroll-out.min.js"></script>
+    <!--      <script src="js/jquery.fancybox.min.js"></script>-->
+    <script>
+      windowWidth = window.innerWidth;
+      var winW = $(window).outerWidth();
+      var winH = $(window).outerHeight();
+
+      //scrollout
+      ScrollOut({
+        once: true,
+      });
+      ScrollOut({
+        targets: ".prlx",
+        cssProps: {
+          viewportY: true,
+        },
+      });
+
+      $(window).on("load", function () {
+        $(".selling_slider .next-arrow").trigger("click");
+        document.documentElement.style.setProperty(
+          "--text_arrowHeight",
+          $(".text_arrow").outerHeight() + "px"
+        );
+      });
+      $(window).on("scroll", function (e) {
+        var scrollTopPos = $(window).scrollTop();
+        // $(".layer_1").css({
+        //   transform: "translateY(" + scrollTopPos / 2 + "px)",
+        // });
+        var getOffsetTop = $(".section_2").offset().top;
+        if (getOffsetTop <= scrollTopPos + 100) {
+          $(".animTxt").addClass("animOpac");
+          $(".opac").addClass("animOpac");
+        } else {
+          $(".animTxt").find("h3").removeClass("animOpac");
+        }
+      });
+      if (windowWidth < 767) {
+        $(".icon_section").slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          pauseOnHover: false,
+          variableWidth: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      }
+
+      $(".banner_slider").slick({
+        // dots: true,
+        infinite: true,
+        speed: 500,
+        pauseOnHover: false,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+
+      $(".brand_info_slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        pauseOnHover: false,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              asNavFor: ".brand_logo_slider",
+              dots: false,
+            },
+          },
+        ],
+      });
+      var dataSlidItem = $(".brand_logo .logo");
+
+      $(".brand_info_slider").on(
+        "afterChange",
+        function (event, slick, currentSlide, nextSlide) {
+          $(".brand_logo .logo").removeClass("logActive");
+          $(".brand_logo .logo").eq(currentSlide).addClass("logActive");
+        }
+      );
+      $("[data-slide]").click(function (e) {
+        e.preventDefault();
+        var slideno = $(this).data("slide");
+        $(".brand_info_slider").slick("slickGoTo", slideno - 1);
+        // $("body").css("overflow", "hidden");
+        // console.log(slideno);
+      });
+
+      if (winW < 767) {
+        $(".brand_logo_slider").slick({
+          centerMode: true,
+          centerPadding: "0",
+          dots: true,
+          speed: 500,
+          pauseOnHover: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          asNavFor: ".brand_info_slider",
+        });
+      }
+
+      var $slider = $(".selling_slider");
+      var $progressBar = $(".progress");
+      var $progressBarLabel = $(".progress_bar");
+
+      $slider.on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+
+          $progressBar
+            .css("background-size", calc + "% 100%")
+            .attr("aria-valuenow", calc);
+
+          $progressBarLabel.text(calc + "% completed");
+        }
+      );
+
+      $(".selling_slider").slick({
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        //   slidesToShow: 4,
+        slidesToScroll: 1,
+        speed: 1000,
+        autoplaySpeed: 2000,
+        swipeToSlide: true,
+        variableWidth: true,
+        pauseOnhover: false,
+        prevArrow: '<img src="img/home/l_arrows_b.png" class="prev-arrow">',
+        nextArrow: '<img src="img/home/r_arrows_b.png" class="next-arrow">',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToShow: 1,
+              // variableWidth: false,
+            },
+          },
+        ],
+      });
+
+      var $slider = $(".notes_slider");
+      var $progressBar = $(".progress");
+      var $progressBarLabel = $(".progress_bar");
+
+      $slider.on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+
+          $progressBar
+            .css("background-size", calc + "% 100%")
+            .attr("aria-valuenow", calc);
+
+          $progressBarLabel.text(calc + "% completed");
+        }
+      );
+
+      $(".notes_slider").slick({
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 1000,
+        autoplaySpeed: 2000,
+        swipeToSlide: true,
+        variableWidth: false,
+        pauseOnhover: false,
+        prevArrow: '<img src="img/arrow.svg" class="slick-arrow prev-arrow">',
+        nextArrow: '<img src="img/arrow.svg" class="slick-arrow next-arrow">',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToShow: 1,
+              variableWidth: true,
+            },
+          },
+        ],
+      });
+
+      var $slider = $(".blog_slider");
+      var $progressBar = $(".progress");
+      var $progressBarLabel = $(".progress_bar");
+
+      $slider.on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          var calc = (nextSlide / (slick.slideCount - 1)) * 100;
+
+          $progressBar
+            .css("background-size", calc + "% 100%")
+            .attr("aria-valuenow", calc);
+
+          $progressBarLabel.text(calc + "% completed");
+        }
+      );
+
+      $(".blog_slider").slick({
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 1000,
+        autoplaySpeed: 2000000,
+        swipeToSlide: true,
+        variableWidth: false,
+        pauseOnhover: false,
+        prevArrow: '<img src="img/arrow.svg" class="slick-arrow prev-arrow">',
+        nextArrow: '<img src="img/arrow.svg" class="slick-arrow next-arrow">',
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              variableWidth: true,
+              arrows: false,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
