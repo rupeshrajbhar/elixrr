@@ -830,6 +830,9 @@ h6 {
     right: -23%;
     transform: translateX(-50%); }
 
+.section_6 {
+  background-color: var(--fourth_color); }
+
 .section_7 .title_info .title {
   width: 50%; }
   .section_7 .title_info .title h2 {
@@ -880,6 +883,51 @@ h6 {
       border: 1px solid #70707069; }
       .section_9 .icon_slider .slick-dots li button:before {
         font-size: 32px; }
+
+.section_10 .title_info .title {
+  width: 35%; }
+  .section_10 .title_info .title h2 {
+    margin-top: -10px; }
+.section_10 .title_info .info {
+  width: 65%; }
+.section_10 .our_sustainability {
+  margin: 0 -10px; }
+  .section_10 .our_sustainability .slider {
+    width: 25%;
+    padding: 0 10px;
+    cursor: pointer; }
+    .section_10 .our_sustainability .slider .blog_img {
+      overflow: hidden; }
+      .section_10 .our_sustainability .slider .blog_img:hover img {
+        transform: scale(1.1);
+        transition: linear .5s; }
+.section_10 .environmentally {
+  padding: 50px;
+  background-color: #67C4C7; }
+  .section_10 .environmentally .box .info {
+    padding-left: 15px; }
+
+.section_11 .title_info .title {
+  width: 40%; }
+  .section_11 .title_info .title h2 {
+    margin-top: -10px; }
+.section_11 .title_info .info {
+  width: 60%; }
+
+.section_12 {
+  background-color: var(--primary_color); }
+  .section_12 .counter {
+    padding-right: 30px;
+    margin-left: var(--container_left_space); }
+    .section_12 .counter h3 {
+      color: #67C4C7; }
+
+.section_13 .title_info .title {
+  width: 40%; }
+  .section_13 .title_info .title h2 {
+    margin-top: -10px; }
+.section_13 .title_info .info {
+  width: 60%; }
 
 .zoomIn[data-scroll] {
   transition: all 1.5s; }

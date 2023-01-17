@@ -171,6 +171,10 @@
   }
 }
 
+.section_6{
+  background-color: var(--fourth_color);
+}
+
 .section_7{
   .title_info{
     .title{
@@ -252,6 +256,86 @@
           }
         }
       }
+    }
+  }
+}
+
+.section_10{
+  .title_info{
+    .title{
+      width: 35%;
+      h2{
+        margin-top: -10px;
+      }
+    }
+    .info{
+      width: 65%;
+    }
+  }
+  .our_sustainability{
+    margin: 0 -10px;
+    .slider{
+      width: 25%;
+      padding: 0 10px;
+      cursor: pointer;
+      .blog_img{
+        overflow: hidden;
+        &:hover{
+          img{
+            transform: scale(1.1);
+          transition: linear .5s;
+          }
+        }
+      }
+    }
+  }
+  .environmentally{
+    padding: 50px;
+    background-color: #67C4C7;
+    .box{
+      .img{}
+      .info{
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+.section_11{
+  .title_info{
+    .title{
+      width: 40%;
+      h2{
+        margin-top: -10px;
+      }
+    }
+    .info{
+      width: 60%;
+    }
+  }
+}
+
+.section_12{
+  background-color: var(--primary_color);
+  .counter{
+    padding-right: 30px;
+    h3{
+      color: #67C4C7;
+    }
+    margin-left: var(--container_left_space);
+  }
+}
+
+.section_13{
+  .title_info{
+    .title{
+      width: 40%;
+      h2{
+        margin-top: -10px;
+      }
+    }
+    .info{
+      width: 60%;
     }
   }
 }
