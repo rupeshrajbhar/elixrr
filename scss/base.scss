@@ -257,13 +257,13 @@ h6 {
 
 .primary_btn {
   @extend .n_e_b;
-  padding: 9px 30px;
-  border-radius: 5px;
+  padding: 12px 50px;
+  border-radius: 100px;
   text-decoration: none;
   letter-spacing: 1.5px;
-  @extend .text_uppercase;
+  // @extend .text_uppercase;
   color: var(--color_white);
-  background-color: transparent;
+  background-color: var(--tertiary_color);
   border: 1px solid var(--color_white);
 
   @media (max-width: 767px) {
@@ -991,4 +991,55 @@ h6 {
   transform: translate3d(0, calc(var(--viewport-y) * -6vh), 0);
   transition: transform 0.12s ease;
   will-change: transform;
+}
+
+
+.loader_overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--color_white);
+  z-index: 1000;
+  padding: 5px 15px;
+  transition: 2s ease;
+
+  .container {
+      height: 100%;
+  }
+
+  img {
+      max-width: 210px;
+      width: 210px;
+      position: absolute;
+      top: calc(50% - 105px);
+      left: calc(50% - 105px);
+      transition: 2s ease;
+  }
+
+  &.start {
+      height: 83px;
+
+      @media screen and (max-width: 991px) {
+          height: 65px;
+      }
+
+      img {
+          top: 4px;
+          left: 10px;
+          width: 105px;
+
+
+          @media screen and (max-width: 767px) {
+              top: -2px !important;
+              left: 0px !important;
+          }
+
+          @media screen and (max-width: 991px) {
+              top: -2px;
+              left: 1px;
+          }
+      }
+  }
 }

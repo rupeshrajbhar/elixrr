@@ -15,6 +15,67 @@
   </head>
 
   <body>
+
+    <header class="header">
+      <div class="container">
+          <nav class="navbar">
+              <div class="logo">
+                  <a href="index.html" class="brand">
+                      <img src="img/home/logo.svg" alt="logo" />
+                  </a>
+              </div>
+
+              <button type="button" class="burger" id="burger">
+                  <span class="burger-line"></span>
+                  <span class="burger-line"></span>
+                  <span class="burger-line"></span>
+              </button>
+              <span class="overlay" id="overlay"></span>
+              <div class="menu" id="menu">
+                  <div class="menu-link close_menu_icon">
+                      x
+                  </div>
+                  <ul class="menu-block">
+                      <li class="menu-item para_opacity ">
+                        <a class="menu-link scrollTo" href="#about_us">Who we are</a>
+                      </li>
+
+                      <li class="menu-item para_opacity"><a class="menu-link scrollTo"
+                              href="#product_collection">What we do</a></li>
+
+                      <li class="menu-item para_opacity">
+                        <a class="menu-link scrollTo" href="#testimonial">How we roll
+                          </a></li>
+
+                      <li class="menu-item para_opacity">
+                        <a class="menu-link scrollTo" href="#contact_us">Infrastructure</a></li>
+
+                      <li class="menu-item para_opacity">
+                      <a class="menu-link scrollTo" href="#contact_us">Why choose us</a></li>
+
+                      <li class="menu-item para_opacity">
+                      <a class="menu-link scrollTo" href="#contact_us">Sustainability</a></li>
+
+                      <li class="menu-item para_opacity">
+                      <a class="menu-link scrollTo" href="#contact_us">Legacy</a></li>
+
+                      <li class="menu-item para_opacity">
+                      <a class="menu-link scrollTo" href="#contact_us">Team</a></li>
+
+                      <li class="menu-item para_opacity">
+                        <a class="menu-link scrollTo" href="#contact_us">Contact us</a></li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </header>
+
+  <div class="loader_overlay">
+      <div class="container">
+          <img src="img/home/logo.svg" alt="loader logo">
+      </div>
+  </div>
+
     <section class="section_1">
       <div class="banner_slider overflow_h">
         <div class="slider">
@@ -591,19 +652,197 @@
 
     <section class="section_13 ptb_100">
       <div class="container">
-        <div class="title_info f_w_j">
-          <div class="title">
-            <h2 class="text_xxl n_b m_tb_0">
-              Our team
-            </h2>
-          </div>
-          <div class="info">
-            <p class="text_sm">
-              We thank our talented team of groundbreakers and<br class="hidden-xs"> 
-              entrepreneurs for bringing innovations to life.
-            </p>
-          </div>
+        <div class="product_section">
+          <div class="title_info f_w_j pb_50">
+            <div class="title">
+              <h2 class="text_xxl n_b m_tb_0">
+                Our team
+              </h2>
+            </div>
+            <div class="info">
+              <p class="text_sm">
+                We thank our talented team of groundbreakers and<br class="hidden-xs"> 
+                entrepreneurs for bringing innovations to life.
+              </p>
+            </div>
+        </div>
+            <div class="tab_section">
+                <div class="button_style pb_40 mob_tb_1 toTop " data-scroll>
+                    <h5 class="main_tab_btn f_w_a">
+                        <span class="btn text_xxs n_b active" data-id="founding" tabindex="0">Founding Team</span>
+                        <span class="btn text_xxs n_b" data-id="promoters" tabindex="0">Promoters</span>
+                        <span class="btn text_xxs n_b" data-id="technical" tabindex="0">Technical Personalities</span>
+                        <span class="btn text_xxs n_b" data-id="other" tabindex="0">Other Renowned Personalities on Board</span>
+                    </h5>
+                </div>
+
+                <div class="slider_section toTop" id="founding" data-scroll>
+                  <div class="product_slider_tab">
+                    <div class="slider">
+                        <img src="img/home/team_member_1.png" class="img-responsive">
+                        <h6 class="text_sm n_s_b">James Cameron</h6>
+                        <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                  </div>
+                  <div class="slider">
+                    <img src="img/home/team_member_1.png" class="img-responsive">
+                    <h6 class="text_sm n_s_b">James Cameron</h6>
+                    <p class="text_xs">Co-founder, Ceo</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="slider_section" id="promoters">
+                  <div class="product_slider_tab">
+                    <div class="slider">
+                        <img src="img/home/team_member_1.png" class="img-responsive">
+                        <h6 class="text_sm n_s_b">James Cameron</h6>
+                        <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                  </div>
+                  <div class="slider">
+                    <img src="img/home/team_member_1.png" class="img-responsive">
+                    <h6 class="text_sm n_s_b">James Cameron</h6>
+                    <p class="text_xs">Co-founder, Ceo</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="slider_section" id="technical">
+                  <div class="product_slider_tab">
+                    <div class="slider">
+                        <img src="img/home/team_member_1.png" class="img-responsive">
+                        <h6 class="text_sm n_s_b">James Cameron</h6>
+                        <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                  </div>
+                  <div class="slider">
+                    <img src="img/home/team_member_1.png" class="img-responsive">
+                    <h6 class="text_sm n_s_b">James Cameron</h6>
+                    <p class="text_xs">Co-founder, Ceo</p>
+                  </div>
+                  </div>
+                </div>
+                <div class="slider_section" id="other">
+                  <div class="product_slider_tab">
+                    <div class="slider">
+                        <img src="img/home/team_member_1.png" class="img-responsive">
+                        <h6 class="text_sm n_s_b">James Cameron</h6>
+                        <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                    </div>
+                    <div class="slider">
+                      <img src="img/home/team_member_1.png" class="img-responsive">
+                      <h6 class="text_sm n_s_b">James Cameron</h6>
+                      <p class="text_xs">Co-founder, Ceo</p>
+                  </div>
+                  <div class="slider">
+                    <img src="img/home/team_member_1.png" class="img-responsive">
+                    <h6 class="text_sm n_s_b">James Cameron</h6>
+                    <p class="text_xs">Co-founder, Ceo</p>
+                  </div>
+                  </div>
+                </div>
+            </div>
+
+        </div>
       </div>
+    </section>
+
+    <section class="section_14 ptb_100">
+      <div class="container">
+        <div class="connect f_w">
+          <div class="add">
+            <h2 class="text_xxl n_b m_tb_0">
+              Let's connect
+            </h2>
+            <ul>
+              <li><img src="img/home/loaction.png" class="img-responsive info_img">
+                <p class="text_md n_b m_tb_0">Elixrr Pvt Ltd</p>
+                <p class="text_sm">3, 25-26, Nariman Point, Mumbai, Maharashtra 400021</p>
+              </li>
+              <li><img src="img/home/call.png" class="img-responsive info_img">
+                <a href="tel:022 4050 2600" class="text_sm">022 4050 2600</a>
+              </li>
+            </ul>
+          </div>
+          <div class="connect_form">
+            <form action="/action_page.php" class="form f_w_a">
+              <div class="form_field">
+                <input type="text" id="name" name="name"  placeholder="Name">
+              </div>
+              <div class="form_field">
+                <input type="email" id="email" name="email" placeholder="Email ID">
+              </div>
+              <div class="form_field">
+                <input type="text" id="number" name="number" placeholder="Contact Number">
+              </div>
+              <div class="form_field">
+                <select name="cars" id="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="form_field textarea_width">
+                <textarea id="message" placeholder="Message" name="message"></textarea>
+              </div>
+              <div class="btn_section pl_20">
+                <p  type="submit" class="primary_btn n_s_b text_xs m_tb_0">Send</p>
+              </div>
+            </form> 
+          </div>
+        </div>
       </div>
     </section>
 
@@ -612,6 +851,20 @@
     <script src="js/scroll-out.min.js"></script>
     <!--      <script src="js/jquery.fancybox.min.js"></script>-->
     <script>
+
+
+    $(document).ready(function (evt) {
+        setTimeout(function () {
+            $('.loader_overlay').addClass('start');
+        }, 500);
+        setTimeout(function () {
+            $('.loader_overlay').fadeOut(300);
+            $('body').css('overflow', 'visible');
+
+        }, 2000);
+    });
+
+
       windowWidth = window.innerWidth;
       var winW = $(window).outerWidth();
       var winH = $(window).outerHeight();
@@ -626,6 +879,19 @@
           viewportY: true,
         },
       });
+
+      $(".banner_slider").slick({
+        // dots: true,
+        infinite: true,
+        speed: 500,
+        pauseOnHover: false,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+
       $(".markets_slider").slick({
       dots: false,
       arrows: false,
@@ -672,6 +938,51 @@
       }
       ],
     });
+
+    $(document).ready(function() {
+    
+    $(".slider_section").hide();
+    $(".slider_section:first").show();
+    $(".btn").click(function() {
+        var getAttr = $(this).attr("data-id");
+        $(".slider_section").hide();
+        $("#" + getAttr).show();
+        $('.product_slider_tab').slick('refresh');
+        $(".btn").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    $(".product_slider_tab").slick({
+        dots: false,
+        arrows: true,
+        autoplay: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        speed: 1000,
+        autoplaySpeed: 2000,
+        swipeToSlide: true,
+        prevArrow: '<img src="img/home/left_arrows.png" class="prev-arrow">',
+        nextArrow: '<img src="img/home/right_arrows.png" class="next-arrow">',
+        responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    rows: 2,
+                    slidesToShow: 2,
+                    arrows: true,
+                    //                        variableWidth: true
+                },
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    dots: false,
+                    arrows: true,
+                },
+            },
+        ],
+    });
+  });
 </script>
   </body>
 </html>
