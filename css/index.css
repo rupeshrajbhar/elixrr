@@ -116,7 +116,7 @@ h6 {
 .n_s_b, .section_1 .banner_slider .slider .slider_info .text_xl {
   font-family: "NunitoSans-SemiBold"; }
 
-.n_b {
+.n_b, .section_6 .magic .magic_box_section .magic_box ul li {
   font-family: "NunitoSans-Bold"; }
 
 .n_e_b, .primary_btn {
@@ -177,13 +177,13 @@ h6 {
   margin: 0 0 20px;
   font-weight: 400; }
 
-.text_xs {
+.text_xs, .section_6 .magic .magic_box_section .magic_box ul li {
   font-size: 18px;
   line-height: 1.4;
   margin: 0 0 20px;
   font-weight: 400; }
 
-.text_xxs, .section_14 .connect .connect_form .form .form_field input, .section_14 .connect .connect_form .form .form_field select, .section_14 .connect .connect_form .form .form_field textarea {
+.text_xxs, .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .content .ul_section ul li, .section_14 .connect .connect_form .form .form_field input, .section_14 .connect .connect_form .form .form_field select, .section_14 .connect .connect_form .form .form_field textarea {
   font-size: 16px;
   line-height: 1.6;
   margin: 0 0 20px;
@@ -952,6 +952,44 @@ h6 {
       top: 0px;
       color: #fff; } }
 
+footer {
+  background-color: var(--primary_color);
+  padding: 12px 0px; }
+  @media only screen and (max-width: 767px) {
+    footer {
+      justify-content: center;
+      padding: 0px 0px 10px; } }
+  footer .footer_strip {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 767px) {
+      footer .footer_strip .strip_item {
+        width: 100%;
+        text-align: center; } }
+    footer .footer_strip .strip_item .para {
+      font-size: 16px;
+      color: var(--color_white); }
+    footer .footer_strip .social_link {
+      display: flex; }
+      @media only screen and (max-width: 767px) {
+        footer .footer_strip .social_link {
+          justify-content: center;
+          padding: 0px 0px 20px; } }
+      footer .footer_strip .social_link img {
+        width: 16px; }
+      footer .footer_strip .social_link .face {
+        width: 10px; }
+      footer .footer_strip .social_link a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        background-color: #FFFBFC;
+        margin: 0px 8px;
+        border-radius: 50%; }
+
 .section_1 h2 {
   opacity: 0; }
 .section_1 h3 {
@@ -1053,6 +1091,98 @@ h6 {
 
 .section_6 {
   background-color: var(--fourth_color); }
+  .section_6 .magic .magic_title {
+    border-bottom: 1px solid var(--text_color); }
+    .section_6 .magic .magic_title h6 {
+      width: 24%; }
+      .section_6 .magic .magic_title h6:nth-child(2) {
+        width: 28%; }
+  .section_6 .magic .magic_box_section {
+    margin: 0 -20px; }
+    .section_6 .magic .magic_box_section .magic_box {
+      width: 24%;
+      padding: 0 20px;
+      margin-top: 30px;
+      position: relative; }
+      .section_6 .magic .magic_box_section .magic_box:nth-child(2) {
+        width: 28%; }
+      .section_6 .magic .magic_box_section .magic_box::after {
+        content: ' ';
+        width: 1px;
+        height: 100%;
+        right: 10px;
+        top: 0;
+        position: absolute;
+        background-image: url(../img/home/line.png); }
+      .section_6 .magic .magic_box_section .magic_box:last-child::after {
+        width: 0; }
+      .section_6 .magic .magic_box_section .magic_box .icon_text {
+        margin: 20px 0; }
+        .section_6 .magic .magic_box_section .magic_box .icon_text .icon {
+          width: 25%; }
+        .section_6 .magic .magic_box_section .magic_box .icon_text .text {
+          width: 75%;
+          padding-left: 15px; }
+          .section_6 .magic .magic_box_section .magic_box .icon_text .text h5 {
+            margin: 0; }
+      .section_6 .magic .magic_box_section .magic_box ul ::marker {
+        color: var(--tertiary_color); }
+      .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid var(--text_color); }
+        .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title {
+          margin: 0;
+          display: block;
+          color: var(--text_color);
+          padding: 20px 0;
+          text-decoration: none;
+          padding-right: 30px;
+          position: relative;
+          -webkit-transition: all 0.2s linear;
+          -moz-transition: all 0.2s linear;
+          transition: all 0.2s linear; }
+          @media (max-width: 767px) {
+            .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title {
+              padding-right: 40px; } }
+          .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title .icon_text {
+            margin: 0; }
+            .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title .icon_text .icon {
+              width: 25%; }
+            .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title .icon_text .text {
+              width: 75%;
+              padding-left: 15px; }
+              .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title .icon_text .text h5 {
+                margin: 0; }
+          .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title i {
+            width: 25px;
+            height: 25px;
+            top: 50%;
+            right: 10px;
+            display: flex;
+            font-size: 12px;
+            color: var(--text_color);
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            position: absolute;
+            transform: translateY(-50%); }
+            @media (max-width: 767px) {
+              .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title i {
+                right: 5px; } }
+            .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .faq_title i::before {
+              margin-top: 1px; }
+        .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .content {
+          display: none;
+          margin-bottom: 10px; }
+          .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .content .ul_section ul {
+            width: 50%;
+            padding: 0 10px;
+            margin: 0; }
+            .section_6 .magic .magic_box_section .magic_box .faq_section .faq_box .content .ul_section ul li {
+              margin-bottom: 5px;
+              font-family: "nunitosans-Light"; }
 
 .section_7 .title_info .title {
   width: 50%; }
@@ -1068,6 +1198,8 @@ h6 {
     cursor: pointer; }
     .section_7 .markets .markets_slider .slider .blog_img {
       overflow: hidden; }
+      .section_7 .markets .markets_slider .slider .blog_img img {
+        width: 100%; }
       .section_7 .markets .markets_slider .slider .blog_img:hover img {
         transform: scale(1.1);
         transition: linear .5s; }
@@ -1119,6 +1251,8 @@ h6 {
     cursor: pointer; }
     .section_10 .our_sustainability .slider .blog_img {
       overflow: hidden; }
+      .section_10 .our_sustainability .slider .blog_img img {
+        width: 100%; }
       .section_10 .our_sustainability .slider .blog_img:hover img {
         transform: scale(1.1);
         transition: linear .5s; }
@@ -1186,6 +1320,7 @@ h6 {
           padding: 0 10px;
           margin-bottom: 20px; } }
       .section_13 .product_section .tab_section .slider_section .product_slider_tab .slider img {
+        width: 100%;
         padding-bottom: 20px; }
         @media screen and (max-width: 767px) {
           .section_13 .product_section .tab_section .slider_section .product_slider_tab .slider img {
@@ -1228,7 +1363,8 @@ h6 {
       color: var(--text_color);
       text-decoration: none; }
 .section_14 .connect .connect_form {
-  width: 60%; }
+  width: 60%;
+  padding-left: 30px; }
   .section_14 .connect .connect_form .form {
     padding: 50px 30px;
     border-radius: 25px;
@@ -1239,20 +1375,20 @@ h6 {
       .section_14 .connect .connect_form .form .form_field input {
         width: 100%;
         border: 0;
-        border-bottom: 1px solid #47484A; }
+        border-bottom: 1px solid #47484a45; }
         .section_14 .connect .connect_form .form .form_field input:focus {
           outline: none; }
       .section_14 .connect .connect_form .form .form_field select {
         width: 100%;
         border: 0;
-        border-bottom: 1px solid #47484A;
+        border-bottom: 1px solid #47484a45;
         color: #47484A; }
       .section_14 .connect .connect_form .form .form_field textarea {
         width: 100%;
         border: 0;
         height: 31px;
         line-height: 0s;
-        border-bottom: 1px solid #47484A; }
+        border-bottom: 1px solid #47484a45; }
         .section_14 .connect .connect_form .form .form_field textarea:focus {
           outline: none; }
   .section_14 .connect .connect_form ::placeholder {
