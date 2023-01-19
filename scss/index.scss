@@ -15,11 +15,11 @@
   }
   .slick-active h2 {
     transform: translateY(80px);
-    animation: 0.5s fadeUp 0.5s forwards;
+    animation: 1.2s fadeUp 1.2s forwards;
   }
   .slick-active h3 {
     transform: translateY(80px);
-    animation: 0.8s fadeUp 0.8s forwards;
+    animation: 1.5s fadeUp 1.5s forwards;
   }
 
   @keyframes fadeUp {
@@ -57,6 +57,23 @@
         @extend .postion_t_b;
         @extend .color_white;
         top: 90%;
+        a{
+          color: var(--color_white);
+          text-decoration: none;
+        }
+        .scroll_down_arrow{
+          width: 36px;
+          height: 36px;
+          border-radius: 100%;
+          @extend .margin_a;
+          backdrop-filter: blur(8px);
+          background-color: #4C6651;
+          border: 2px solid #67C4C7;
+          @extend .postion_relative;
+          img{
+            @extend .postion_t_b;
+          }
+        }
       }
     }
   }
@@ -68,7 +85,7 @@
   &::after{
     content: '';
     width: 100%;
-    height: 440px;
+    height: 100%;
     left: 0;
     z-index: -1;
     top: -55px;
@@ -89,13 +106,73 @@
   }
 }
 
+.section_3{
+  .what{
+    .what_img{
+      width: 648px;
+      @extend .postion_relative;
+      .what_text_1{
+        top: 10vh;
+        opacity: 0;
+        right: -25vh;
+        transition: linear .4s;
+        @extend .postion_absolute;
+        transform: translateX(80px);
+        p{
+          color: var(--primary_color);
+        }
+      }
+      .what_text_2{
+        bottom: 1vh;
+        opacity: 0;
+        right: -25vh;
+        transform: translateY(80px);
+        transition: linear .4s;
+        @extend .postion_absolute;
+        p{
+          color: var(--primary_color);
+        }
+      }
+      .what_text_3{
+        top: 17vh;
+        opacity: 0;
+        left: -24vh;
+        transition: linear .4s;
+        @extend .postion_absolute;
+        transform: translateY(80px);
+        p{
+          color: var(--primary_color);
+        }
+      }
+      .what_text_animaction{
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .what_text_animaction_l{
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
 .section_4{
   background-color: var(--primary_color);
   .types{
     .types_section{
       .icon_box{
         width: 33.33%;
+        .active {
+
+          .icon_p{
+              opacity: 0;
+            }
+            .icon_n{
+              opacity: 1 !important;
+            }
+        }
         .box{
+          cursor: pointer;
           .icon{
             width: 28%;
             position: relative;
@@ -427,7 +504,8 @@
       .blog_img{
         overflow: hidden;
         img{
-          width: 100%;
+          width: 100%
+          ;
         }
         &:hover{
           img{

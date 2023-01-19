@@ -997,7 +997,7 @@ h6 {
 .loader_overlay {
   position: fixed;
   left: 0;
-  top: 0;
+  top: 6px;
   height: 100%;
   width: 100%;
   background: var(--color_white);
@@ -1013,8 +1013,8 @@ h6 {
       max-width: 210px;
       width: 210px;
       position: absolute;
-      top: calc(50% - 105px);
-      left: calc(50% - 105px);
+      top: calc(50% - 153px);
+      left: calc(50% - 153px);
       transition: 2s ease;
   }
 
@@ -1028,7 +1028,7 @@ h6 {
       img {
           top: 4px;
           left: 10px;
-          width: 105px;
+          width: 153px;
 
 
           @media screen and (max-width: 767px) {
