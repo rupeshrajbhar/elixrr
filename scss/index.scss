@@ -114,7 +114,7 @@
       .what_text_1{
         top: 10vh;
         opacity: 0;
-        right: -25vh;
+        right: -23vh;
         transition: linear .4s;
         @extend .postion_absolute;
         transform: translateX(80px);
@@ -123,7 +123,7 @@
         }
       }
       .what_text_2{
-        bottom: 1vh;
+        bottom: 3vh;
         opacity: 0;
         right: -25vh;
         transform: translateY(80px);
@@ -134,7 +134,7 @@
         }
       }
       .what_text_3{
-        top: 17vh;
+        top: 15vh;
         opacity: 0;
         left: -24vh;
         transition: linear .4s;
@@ -163,7 +163,12 @@
       .icon_box{
         width: 33.33%;
         .active {
-
+          .icon{
+            opacity: 1 !important;
+          }
+          .text{
+            opacity: 1 !important;
+          }
           .icon_p{
               opacity: 0;
             }
@@ -175,7 +180,9 @@
           cursor: pointer;
           .icon{
             width: 28%;
+            opacity: 0.4;
             position: relative;
+            transition: linear .2s;
             .icon_p{
               top: -18px;
               left: 50%;
@@ -192,7 +199,9 @@
           }
           .text{
             width: 72%;
+            opacity: 0.4;
             padding-left: 40px;
+            transition: linear .2s;
           }
         }
       }
@@ -216,35 +225,66 @@
     width: 600px;
     margin: auto;
     @extend .postion_relative;
+    .roll_img_a{
+      opacity: 0;
+      transform: scale(.6);
+      transition: linear .6s;
+      &.roll_scale{
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
     .box{
+      opacity: 0;
+      transition: linear .8s;
       @extend .postion_absolute;
       &.box_1{
         top: -50px;
-        left: 20%;
+        left: 10%;
         transform: translateX(-50%);
+        &.bax_1_a{
+          opacity: 1;
+          left: 20%;
+        }
       }
       &.box_2{
         top: 68%;
-        left: 10%;
+        left: 0%;
         transform: translate(-50%, -50%);
+        &.bax_2_a{
+          opacity: 1;
+          left: 10%;
+        }
       }
       &.box_3{
-        bottom: -53%;
+        bottom: -63%;
         left: 50%;
         transform: translate(-50%, -50%);
         h4{
           margin: -30px 0 0 -20px;
         }
+        &.bax_3_a{
+          opacity: 1;
+          bottom: -53%;
+        }
       }
       &.box_4{
         top: 66%;
-        right: -35%;
+        right: -45%;
         transform: translate(-50%, -50%);
+        &.bax_4_a{
+          opacity: 1;
+          right: -35%;
+        }
       }
       &.box_5{
         top: -50px;
-        right: -23%;
+        right: -33%;
         transform: translateX(-50%);
+        &.bax_5_a{
+          opacity: 1;
+          right: -23%;
+        }
       }
     }
   }
@@ -418,11 +458,15 @@
           overflow: hidden;
           img{
             width: 100%;
+            -webkit-transition: all 0.5s linear;
+            transition: all 0.5s linear;
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
           }
           &:hover{
             img{
-              transform: scale(1.1);
-            transition: linear .5s;
+              // transform: scale(1.1);
+              transform: scale3d(1.2, 1.2, 1);
             }
           }
         }
@@ -486,13 +530,13 @@
 .section_10{
   .title_info{
     .title{
-      width: 35%;
+      width: 40%;
       h2{
         margin-top: -10px;
       }
     }
     .info{
-      width: 65%;
+      width: 60%;
     }
   }
   .our_sustainability{
@@ -504,13 +548,16 @@
       .blog_img{
         overflow: hidden;
         img{
-          width: 100%
-          ;
+          width: 100%;
+          -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+          -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
         }
         &:hover{
           img{
-            transform: scale(1.1);
-          transition: linear .5s;
+            // transform: scale(1.1);
+            transform: scale3d(1.2, 1.2, 1);
           }
         }
       }
@@ -545,11 +592,16 @@
 .section_12{
   background-color: var(--primary_color);
   .counter{
-    padding-right: 30px;
     h3{
       color: #67C4C7;
     }
+    span{
+      color: #67C4C7;
+    }
     margin-left: var(--container_left_space);
+    .box{
+      width: 20vw;
+    }
   }
 }
 
@@ -598,6 +650,7 @@
                     margin-right: 80px;
                     opacity: .5;
                     color: #47484A;
+                    border-bottom: 1px solid #47484A;
                     &.active {
                       opacity: 1;
                       color: var(--primary_color);
@@ -714,6 +767,9 @@
             @extend .text_xxs;
             border-bottom: 1px solid #47484a45;
             color: #47484A;
+            &:focus{
+              outline: none;
+            }
           }
           textarea{
             width: 100%;

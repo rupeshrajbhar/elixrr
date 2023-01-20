@@ -117,8 +117,8 @@
       <div class="container">
         <div class="who">
           <h4 class="text_md text_uppercase toTop" data-scroll>Who we are</h4>
-          <h3 class="text_xxxl n_s_b toTop" data-scroll>We are one of the first nonwoven fabric<br class="hidden-xs">
-             manufacturers in the world <br class="hidden-xs">
+          <h3 class="text_xxxl n_s_b toTop" data-scroll>We are one of the first nonwoven
+            <br class="hidden-xs"> fabric manufacturers in the world <br class="hidden-xs">
             to use the 5+ Nonwoven Technology. </h3>
             <div class="para_text_w toTop" data-scroll>
               <p class="text_sm">With our capability to integrate more than five technologies in one line, 
@@ -134,7 +134,7 @@
     <section class="section_3 pb_100" id="what_we_do">
       <div class="container">
         <div class="what">
-          <h2 class="text_xxl text_center n_b m_tb_0 toTop" data-scroll>What we do</h2>
+          <h2 class="text_xxl text_center n_b toTop" data-scroll>What we do</h2>
           <p class="text_sm text_center toTop" data-scroll>With our unique technological capabilities, we
             <br class="hidden-xs">
              can make a range of nonwoven fabric rolls. </p>
@@ -161,7 +161,7 @@
     <section class="section_4 ptb_100">
       <div class="container">
         <div class="types">
-          <h2 class="text_xxl color_white n_b m_tb_0 toTop" data-scroll>
+          <h2 class="text_xxl color_white n_b toTop" data-scroll>
             Types of nonwovens we make
           </h2>
           <h4 class="text_xl color_white n_s_b m_tb_0 pb_40 toTop" data-scroll>
@@ -169,7 +169,7 @@
           </h4>
           <div class="types_section f_w">
             <div class="icon_box">
-              <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types1">
+              <div class="box f_w_a ptb_20 btn toTop active" data-scroll data-id="types1">
                 <div class="icon">
                   <img src="img/home/icon_card.png" class="img-responsive margin_a">
                   <img src="img/home/icon_p.png" class="img-responsive icon_p">
@@ -277,7 +277,7 @@
           </div>
           <h4 class="text_xl text_center n_s_b pb_40 toTop" data-scroll>Technologies used</h4>
           <div class="roll">
-            <img src="img/home/roll.png" class="img-responsive margin_a" alt="">
+              <img src="img/home/roll.png" class="img-responsive margin_a roll_img_a" alt="">
             <div class="box box_1">
               <div class="title_icon f_w_a">
                 <div class="title">
@@ -876,13 +876,19 @@
     </section>
 
     <section class="section_12 ptb_60">
-        <div class="counter f_r_aj_between toTop" data-scroll>
+        <div class="counter f_r_aj_between toTop counter_slider" id="counter-stats" data-scroll>
           <div class="box">
-            <h3 class="text_xxxl n_b m_tb_0">7000+</h3>
+            <div class="count_num d_f">
+              <!-- <h3 class="text_xxxl n_b m_tb_0 counting" data-count="7000">0</h3> -->
+              <h3 class="text_xxxl n_b m_tb_0">7000+</h3>
+              <!-- <span class="text_xxxl n_b m_tb_0">+</span> -->
+            </div>
             <p class="text_sm color_white">employees</p>
           </div>
           <div class="box">
+            <div class="count_num d_f">
             <h3 class="text_xxxl n_b m_tb_0">200+</h3>
+          </div>
             <p class="text_sm color_white">million USD turnover</p>
           </div>
           <div class="box">
@@ -899,6 +905,17 @@
             <h3 class="text_xxxl n_b m_tb_0">965</h3>
             <p class="text_sm color_white">million SQM yearly<br class="hidden-xs">
               manufacturing</p>
+          </div>
+          <div class="box">
+            <h3 class="text_xxxl n_b m_tb_0">200+</h3>
+            <p class="text_sm color_white">million kilogram<br class="hidden-xs">
+              polymer processing</p>
+          </div>
+          <div class="box">
+            <h3 class="text_xxxl n_b m_tb_0">9</h3>
+            <p class="text_sm color_white">9 billion bottles
+              <br class="hidden-xs">
+              recycled into fibres</p>
           </div>
         </div>
     </section>
@@ -920,7 +937,7 @@
             </div>
         </div>
             <div class="tab_section">
-                <div class="button_style pb_40 mob_tb_1 toTop " data-scroll>
+                <div class="button_style mob_tb_1 toTop " data-scroll>
                     <h5 class="main_tab_btn f_w_a toTop" data-scroll>
                         <span class="btn text_xxs n_b active" data-id="founding" tabindex="0">Founding Team</span>
                         <span class="btn text_xxs n_b" data-id="promoters" tabindex="0">Promoters</span>
@@ -929,7 +946,7 @@
                     </h5>
                 </div>
 
-                <div class="slider_section toTop" id="founding" data-scroll>
+                <div class="slider_section" id="founding">
                   <div class="product_slider_tab">
                     <div class="slider">
                         <img src="img/home/team_member_1.png" class="img-responsive">
@@ -1103,7 +1120,7 @@
       <div class="container">
           <div class="footer_strip d_f">
               <div class="strip_item">
-                  <p class="para">© 2022 Copyright Elixrr Pvt Ltd</p>
+                  <p class="para">Copyright &#169; 2022 Copyright Elixrr Pvt Ltd</p>
               </div>
               <div class="strip_item social_link">
                   <a href="#">
@@ -1133,6 +1150,35 @@
     <script src="js/scroll-out.min.js"></script>
     <!--      <script src="js/jquery.fancybox.min.js"></script>-->
     <script>
+
+
+// number count for stats, using jQuery animate
+
+// $('.counting').each(function() {
+//   var $this = $(this),
+//       countTo = $this.attr('data-count');
+  
+//   $({ countNum: $this.text()}).animate({
+//     countNum: countTo
+//   },
+
+//   {
+
+//     duration: 3000,
+//     easing:'linear',
+//     step: function() {
+//       $this.text(Math.floor(this.countNum));
+//     },
+//     complete: function() {
+//       $this.text(this.countNum);
+//       //alert('finished');
+//     }
+
+//   });  
+  
+
+// });
+
 
   $(".tab_contant").hide();
     $(".tab_contant:first").show();
@@ -1190,6 +1236,30 @@
         autoplay: true,
         autoplaySpeed: 2000,
       });
+
+      $(".counter_slider").slick({
+      dots: false,
+      arrows: false,
+      autoplay: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      speed: 1000,
+      autoplaySpeed: 1000,
+      swipeToSlide: true,
+      variableWidth: true,
+      pauseOnhover: false,
+      prevArrow: '<img src="img/home/l_arrows_b.png" class="prev-arrow">',
+      nextArrow: '<img src="img/home/r_arrows_b.png" class="next-arrow">',
+      responsive: [{
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          variableWidth: true,
+        },
+      }
+      ],
+    });
 
       $(".markets_slider").slick({
       dots: false,
@@ -1331,6 +1401,39 @@
                     $('.what_text_3').addClass('what_text_animaction');
                 });
             }, 500);
+        }
+        var scrollme = $(".section_5").offset().top - 100;
+        if (scrollTopPos > scrollme) {
+            $(document).ready(function() {
+                $('.roll_img_a').addClass('roll_scale');
+            });
+
+            setTimeout(function() {
+                $(document).ready(function() {
+                    $('.box_1').addClass('bax_1_a');
+                });
+            }, 100);
+
+            setTimeout(function() {
+                $(document).ready(function() {
+                    $('.box_2').addClass('bax_2_a');
+                });
+            }, 100);
+            setTimeout(function() {
+                $(document).ready(function() {
+                    $('.box_3').addClass('bax_3_a');
+                });
+            }, 100);
+            setTimeout(function() {
+                $(document).ready(function() {
+                    $('.box_4').addClass('bax_4_a');
+                });
+            }, 100);
+            setTimeout(function() {
+                $(document).ready(function() {
+                    $('.box_5').addClass('bax_5_a');
+                });
+            }, 100);
         }
     }
 });
