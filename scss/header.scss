@@ -75,7 +75,7 @@
             margin: 6px auto;
             transform: rotate(0deg);
             transition: all 0.3s ease-in-out;
-            // background-color: $color-red;
+            background-color: var(--text_color);
         }
     }
 
@@ -92,6 +92,9 @@
         transition: all 0.5s ease;
         background-color: var(--color_white);
         padding: 32px 0px;
+        @media (max-width: 767px) {
+            padding: 0;
+          }
 
         @media only screen and (min-width: 992px) {
             position: relative;

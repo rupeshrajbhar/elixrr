@@ -175,6 +175,10 @@ h6 {
   line-height: 86px;
   margin: 0 0 20px;
   font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 55px;
+    line-height: 55px;
+  }
 }
 
 .text_xxxl {
@@ -193,6 +197,9 @@ h6 {
   line-height: 1.2;
   margin: 0 0 20px;
   font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 40px;
+  }
 }
 
 .text_xl {
@@ -210,6 +217,9 @@ h6 {
   line-height: 1.3;
   margin: 0 0 20px;
   font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 25px;
+  }
 }
 
 .text_md {
@@ -217,6 +227,9 @@ h6 {
   line-height: 1.6;
   margin: 0 0 20px;
   font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
 }
 
 .text_reg {
@@ -224,6 +237,9 @@ h6 {
   line-height: 1.6;
   margin: 0 0 20px;
   font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 20px;
+  }
 }
 
 .text_sm {
@@ -231,6 +247,9 @@ h6 {
   line-height: 1.4;
   margin: 0 0 20px;
   font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
 }
 
 .text_xs {
@@ -238,6 +257,9 @@ h6 {
   line-height: 1.4;
   margin: 0 0 20px;
   font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 }
 
 .text_xxs {
@@ -245,6 +267,9 @@ h6 {
   line-height: 1.6;
   margin: 0 0 20px;
   font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
 }
 
 .color_white {
