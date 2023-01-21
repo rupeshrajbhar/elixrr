@@ -1038,8 +1038,8 @@ h6 {
       max-width: 210px;
       width: 210px;
       position: absolute;
-      top: calc(50% - 153px);
-      left: calc(50% - 153px);
+      top: calc(50% - 67px);
+      left: calc(50% - 105px);
       transition: 2s ease;
   }
 
@@ -1083,6 +1083,13 @@ h6 {
   background-size: 136px;
   transition: 0.5s ease;
   transition-delay: 0.3s;
+  @media (max-width: 992px) {
+    width: 90px;
+    height: 90px;
+    right: 15px;
+    top: -100px;
+    background-size: 90px;
+  }
 }
 .stamp:after {
   content: "";
@@ -1097,6 +1104,10 @@ h6 {
   background-repeat: no-repeat;
   -webkit-animation: 14s rotating 1s linear infinite;
   animation: 14s rotating 1s linear infinite;
+  @media (max-width: 992px) {
+    top: 7px;
+    left: 7px;
+  }
 }
 @-webkit-keyframes rotating {
   0% {
