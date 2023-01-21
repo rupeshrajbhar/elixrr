@@ -115,6 +115,7 @@
 
     <section class="section_2 ptb_100" id="who_we_are">
       <div class="container">
+        <div class="stamp start toTop" data-scroll></div>
         <div class="who">
           <h4 class="text_md text_uppercase toTop" data-scroll>Who we are</h4>
           <h3 class="text_xxxl n_s_b toTop" data-scroll>We are one of the first nonwoven
@@ -1322,9 +1323,9 @@
         var getAttr = $(this).attr("data-id");
         $(".slider_section").hide();
         $("#" + getAttr).show();
-        $('.product_slider_tab').slick('refresh');
         $(".btn").removeClass("active");
         $(this).addClass("active");
+        $('.product_slider_tab').slick('refresh');
     });
 
 
@@ -1365,21 +1366,17 @@
         swipeToSlide: true,
         prevArrow: '<img src="img/home/left_arrows.png" class="prev-arrow">',
         nextArrow: '<img src="img/home/right_arrows.png" class="next-arrow">',
-        responsive: [{
+        responsive: [
+            {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 1,
-                    rows: 2,
-                    slidesToShow: 2,
-                    arrows: true,
-                    //                        variableWidth: true
-                },
-            },
-            {
-                breakpoint: 1200,
-                settings: {
-                    dots: false,
-                    arrows: true,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows:false,
+                  autoplay: true,
+                speed: 1000,
+                autoplaySpeed: 1000,
+                variableWidth: true,
                 },
             },
         ],

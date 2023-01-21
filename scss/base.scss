@@ -1068,3 +1068,54 @@ h6 {
       }
   }
 }
+
+.stamp {
+  background-image: url(../img/home/text_c.png);
+  position: absolute;
+  z-index: 1;
+  width: 136px;
+  height: 136px;
+  top: -170px;
+  right: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 136px;
+  transition: 0.5s ease;
+  transition-delay: 0.3s;
+}
+.stamp:after {
+  content: "";
+  background-image: url(../img/home/text.png);
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  left: 10px;
+  top: 10px;
+  // transform: translate(-50%,-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-animation: 14s rotating 1s linear infinite;
+  animation: 14s rotating 1s linear infinite;
+}
+@-webkit-keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

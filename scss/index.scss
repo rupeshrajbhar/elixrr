@@ -163,16 +163,16 @@
   background-color: var(--primary_color);
   .types{
     .types_section{
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         justify-content: space-between;
       }
       .icon_box{
         width: 33.33%;
-        @media (max-width: 767px) {
+        @media (max-width: 992px) {
           width: 48%;
         }
         &:last-child{
-          @media (max-width: 767px) {
+          @media (max-width: 992px) {
             width: 100%;
           }
         }
@@ -230,7 +230,7 @@
   .title_info{
     .title{
       width: 38%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
         padding-bottom: 10px;
       }
@@ -240,7 +240,7 @@
     }
     .info{
       width: 62%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
       }
     }
@@ -326,6 +326,9 @@
 
 .section_6{
   background-color: var(--fourth_color);
+  @media (min-width: 768px) and (max-width: 992px) {
+    margin-top: 40px;
+  }
   .magic{
     .magic_title{
       display: flex;
@@ -348,6 +351,13 @@
         @media (max-width: 767px) {
           width: 100%;
           border-bottom: 1px solid var(--text_color);
+        }
+
+       
+        ul{
+          @media (min-width: 768px) and (max-width: 991px) {
+            padding-left: 10px;
+          }
         }
         &:last-child{
           @media (max-width: 767px) {
@@ -496,7 +506,7 @@
   .title_info{
     .title{
       width: 50%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
         padding-bottom: 10px;
       }
@@ -506,7 +516,7 @@
     }
     .info{
       width: 50%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
       }
     }
@@ -545,14 +555,14 @@
     .info{
       width: 50%;
       padding-right: 60px;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
         padding-right: 0;
       }
     }
     .map{
       width: 50%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
         padding-top: 25px;
       }
@@ -565,7 +575,7 @@
   .title_info{
     .title{
       width: 35%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
         padding-bottom: 10px;
       }
@@ -575,7 +585,7 @@
     }
     .info{
       width: 65%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
       }
     }
@@ -638,7 +648,7 @@
   .title_info{
     .title{
       width: 40%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
         padding-bottom: 10px;
       }
@@ -648,7 +658,7 @@
     }
     .info{
       width: 60%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
       }
     }
@@ -693,6 +703,12 @@
        padding-bottom: 30px;
        justify-content: center;
       }
+      &:first-child{
+        @media (min-width: 768px) and (max-width: 992px) {
+          width: 100%;
+          padding-bottom: 20px;
+        }
+      }
       .img{
         @media (max-width: 767px) {
           margin: auto;
@@ -714,7 +730,7 @@
   .title_info{
     .title{
       width: 40%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
         padding-bottom: 10px;
       }
@@ -724,7 +740,7 @@
     }
     .info{
       width: 60%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
       }
     }
@@ -755,6 +771,14 @@
         width: 55vw;
         padding-left: 15px;
       }
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 30vw;
+        padding-left: 15px;
+      }
+      @media (min-width: 993px) and (max-width: 1200px) {
+        width: 25vw;
+        padding-left: 15px;
+      }
     }
   }
 }
@@ -779,7 +803,7 @@
     .title_info{
       .title{
         width: 40%;
-        @media (max-width: 767px) {
+        @media (max-width: 992px) {
           width: 100%;
           padding-bottom: 10px;
         }
@@ -789,7 +813,7 @@
       }
       .info{
         width: 60%;
-        @media (max-width: 767px) {
+        @media (max-width: 992px) {
           width: 100%;
         }
       }
@@ -800,10 +824,11 @@
 
 
             .main_tab_btn {
-                @media screen and (max-width: 992px) {
+                @media screen and (max-width: 767px) {
                     overflow-x: auto;
                     white-space: nowrap;
                     padding-bottom: 15px;
+                    display: inherit;
                 }
 
                 .btn {
@@ -812,6 +837,12 @@
                     opacity: .5;
                     color: #47484A;
                     border-bottom: 1px solid #47484A;
+                    @media screen and (max-width: 767px) {
+                      margin:0 12px;
+                    }
+                    @media (min-width: 768px) and (max-width: 992px) {
+                      margin-right: 15px;
+                    }
                     &.active {
                       opacity: 1;
                       color: var(--primary_color);
@@ -829,6 +860,7 @@
                     padding: 0 15px;
 
                     @media screen and (max-width: 767px) {
+                      width: 80vw;
                         padding: 0 10px;
                         margin-bottom: 20px;
                     }
@@ -856,6 +888,11 @@
                     @media only screen and (max-width: 767px) {
                         bottom: -50px;
                     }
+
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                      left: 0;
+                      z-index: 1;
+                    }
                 }
 
                 .next-arrow {
@@ -870,6 +907,9 @@
                         right: 10px;
                         bottom: -50px;
                     }
+                    @media (min-width: 768px) and (max-width: 1200px) {
+                      right: 0;
+                    }
                 }
             }
 
@@ -882,7 +922,7 @@
   .connect{
     .add{
       width: 40%;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
       }
       ul{
@@ -905,7 +945,7 @@
     .connect_form{
       width: 60%;
       padding-left: 30px;
-      @media (max-width: 767px) {
+      @media (max-width: 992px) {
         width: 100%;
         padding-left: 0;
       }
