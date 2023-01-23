@@ -1022,12 +1022,12 @@ h6 {
 .loader_overlay {
   position: fixed;
   left: 0;
-  top: 6px;
+  top: 0px;
   height: 100%;
   width: 100%;
   background: var(--color_white);
   z-index: 1000;
-  padding: 5px 15px;
+  padding: 0px 15px;
   transition: 2s ease;
 
   .container {
@@ -1051,18 +1051,18 @@ h6 {
       }
 
       img {
-          top: 4px;
-          left: 10px;
+          top: 15px;
+          left: 15px;
           width: 153px;
 
 
           @media screen and (max-width: 767px) {
-              top: -2px !important;
+              // top: -2px !important;
               left: 0px !important;
           }
 
           @media screen and (max-width: 991px) {
-              top: -2px;
+              top: 9px;
               left: 1px;
           }
       }

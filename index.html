@@ -1,1250 +1,1241 @@
 <!DOCTYPE html>
 <html class="no-js" lang="">
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta name="theme-color" content="#000" />
-    <title>Elixrr</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="css/slick-theme.css" />
-    <!--    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />-->
-    <link rel="shortcut icon" type="image/x-icon" href="img/g5/favicon.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  </head>
 
-  <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#000" />
+  <title>Elixrr</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <!--    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />-->
+  <link rel="shortcut icon" type="image/x-icon" href="img/g5/favicon.png" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-    <header class="header">
-      <div class="container">
-          <nav class="navbar">
-              <div class="logo">
-                  <a href="index.html" class="brand">
-                      <img src="img/home/logo.svg" alt="logo" />
-                  </a>
-              </div>
+<body>
 
-              <button type="button" class="burger" id="burger">
-                  <span class="burger-line"></span>
-                  <span class="burger-line"></span>
-                  <span class="burger-line"></span>
-              </button>
-              <span class="overlay" id="overlay"></span>
-              <div class="menu" id="menu">
-                  <div class="menu-link close_menu_icon">
-                      x
-                  </div>
-                  <ul class="menu-block">
-                      <li class="menu-item para_opacity ">
-                        <a class="menu-link scrollTo" href="#who_we_are">Who we are</a>
-                      </li>
-
-                      <li class="menu-item para_opacity"><a class="menu-link scrollTo"
-                              href="#what_we_do">What we do</a></li>
-
-                      <li class="menu-item para_opacity">
-                        <a class="menu-link scrollTo" href="#how_we_roll">How we roll
-                          </a></li>
-
-                      <li class="menu-item para_opacity">
-                        <a class="menu-link scrollTo" href="#infrastructure">Infrastructure</a></li>
-
-                      <li class="menu-item para_opacity">
-                      <a class="menu-link scrollTo" href="#why_choose_us">Why choose us</a></li>
-
-                      <li class="menu-item para_opacity">
-                      <a class="menu-link scrollTo" href="#sustainability">Sustainability</a></li>
-
-                      <li class="menu-item para_opacity">
-                      <a class="menu-link scrollTo" href="#legacy">Legacy</a></li>
-
-                      <li class="menu-item para_opacity">
-                      <a class="menu-link scrollTo" href="#team">Team</a></li>
-
-                      <li class="menu-item para_opacity">
-                        <a class="menu-link scrollTo" href="#contact_us">Contact us</a></li>
-                  </ul>
-              </div>
-          </nav>
-      </div>
-   </header>
-
-    <div class="loader_overlay">
-        <div class="container">
-            <img src="img/home/logo.svg" alt="loader logo">
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html" class="brand">
+            <img src="img/home/logo.svg" alt="logo" />
+          </a>
         </div>
+
+        <button type="button" class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </button>
+        <span class="overlay" id="overlay"></span>
+        <div class="menu" id="menu">
+          <div class="menu-link close_menu_icon">
+            x
+          </div>
+          <ul class="menu-block">
+            <li class="menu-item para_opacity ">
+              <a class="menu-link scrollTo" href="#who_we_are">Who we are</a>
+            </li>
+
+            <li class="menu-item para_opacity"><a class="menu-link scrollTo" href="#what_we_do">What we do</a></li>
+
+            <li class="menu-item para_opacity">
+              <a class="menu-link scrollTo" href="#how_we_roll">How we roll
+              </a></li>
+
+            <li class="menu-item para_opacity">
+              <a class="menu-link scrollTo" href="#infrastructure">Infrastructure</a></li>
+
+            <li class="menu-item para_opacity">
+              <a class="menu-link scrollTo" href="#why_choose_us">Why choose us</a></li>
+
+            <li class="menu-item para_opacity">
+              <a class="menu-link scrollTo" href="#sustainability">Sustainability</a></li>
+
+            <li class="menu-item para_opacity">
+              <a class="menu-link scrollTo" href="#legacy">Legacy</a></li>
+
+            <li class="menu-item para_opacity">
+              <a class="menu-link scrollTo" href="#team">Team</a></li>
+
+            <li class="menu-item para_opacity">
+              <a class="menu-link scrollTo" href="#contact_us">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="loader_overlay">
+    <div class="container">
+      <img src="img/home/logo.svg" alt="loader logo">
+    </div>
+  </div>
+
+  <section class="section_1">
+    <div class="banner_slider overflow_h">
+      <div class="slider">
+        <picture>
+          <source media="(max-width:767px)" srcset="img/home/dekstop_banner.jpg" alt="" />
+          <img src="img/home/dekstop_banner.jpg" class="img-responsive width_100" />
+        </picture>
+        <div class="slider_info text_center">
+          <h2 class="text_xxxxl color_white n_b">
+            Elixrr for your <br class="hidden-xs" />
+            nonwoven goods
+          </h2>
+          <h3 class="text_l color_white n_r">To make the future greener for generations to come</h3>
+          <div class="btn_section pt_30">
+            <a href="#" class="primary_btn text_sm">Shop Now</a>
+          </div>
+        </div>
+        <div class="scroll_down text_center">
+          <a class="scrollTo" href="#who_we_are">
+            <div class="scroll_down_arrow">
+              <img src="img/home/scroll_down.png" class="img-responsive margin_a">
+            </div>
+            <h6 class="text_xxs text_uppercase pt_10">Scroll Down</h6>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_2 ptb_100" id="who_we_are">
+    <div class="container">
+      <div class="stamp start toTop" data-scroll></div>
+      <div class="who">
+        <h4 class="text_md text_uppercase toTop" data-scroll>Who we are</h4>
+        <h3 class="text_xxl n_s_b toTop" data-scroll>We are one of the first nonwoven
+          <br class="hidden-sm-xs"> fabric manufacturers in the world <br class="hidden-sm-xs">
+          to use the 5+ Nonwoven Technology. </h3>
+        <div class="para_text_w toTop" data-scroll>
+          <p class="text_sm">With our capability to integrate more than five technologies in one line,
+            we can produce customised, high-quality and cost-effective nonwoven fabrics.
+          </p>
+          <p class="text_sm">We come equipped with the experience and expertise of Tufropes-one of the
+            top five manufacturers and exporters of synthetic ropes and nets in the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_3 pb_100" id="what_we_do">
+    <div class="container">
+      <div class="what">
+        <h2 class="text_xxl text_center n_b toTop" data-scroll>What we do</h2>
+        <p class="text_sm text_center toTop" data-scroll>With our unique technological capabilities, we
+          <br class="hidden-xs">
+          can make a range of nonwoven fabric rolls. </p>
+        <img src="img/home/what_m.jpg" class="img-responsive visible-sm-xs toTop" data-scroll>
+        <div class="what_img margin_a hidden-sm-xs">
+          <img src="img/home/what.png" class="img-responsive pt_20">
+          <div class="what_text_1">
+            <p class="text_sm n_s_b">We blend natural and<br class="hidden-xs"> synthetic fibres</p>
+          </div>
+          <div class="what_text_2">
+            <p class="text_sm n_s_b">
+              We manufacture different types<br class="hidden-xs"> of hydroentangled nonwovens
+            </p>
+          </div>
+          <div class="what_text_3">
+            <p class="text_sm n_s_b">
+              We make high-performance<br class="hidden-xs"> nonwoven fabrics
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_4 ptb_60">
+    <div class="container">
+      <div class="types">
+        <h2 class="text_xxl color_white n_b toTop" data-scroll>
+          Types of nonwovens we make
+        </h2>
+        <h4 class="text_xl color_white n_s_b m_tb_0 pb_40 toTop" data-scroll>
+          Based on processes:
+        </h4>
+        <div class="types_section f_w">
+          <div class="icon_box">
+            <div class="box f_w_a ptb_20 btn toTop active" data-scroll data-id="types1">
+              <div class="icon">
+                <img src="img/home/icon_card.png" class="img-responsive margin_a">
+                <img src="img/home/icon_p.png" class="img-responsive icon_p">
+                <img src="img/home/icon_n.png" class="img-responsive icon_n">
+              </div>
+              <div class="text">
+                <p class="text_xs color_white">Card + Spunbond
+                  + Pulp (CSP)</p>
+              </div>
+            </div>
+            <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types2">
+              <div class="icon">
+                <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
+                <img src="img/home/icon_p.png" class="img-responsive icon_p">
+                <img src="img/home/icon_n.png" class="img-responsive icon_n">
+              </div>
+              <div class="text">
+                <p class="text_xs color_white">Card + Pulp (CP)</p>
+              </div>
+            </div>
+            <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types3">
+              <div class="icon">
+                <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
+                <img src="img/home/icon_p.png" class="img-responsive icon_p">
+                <img src="img/home/icon_n.png" class="img-responsive icon_n">
+              </div>
+              <div class="text">
+                <p class="text_xs color_white">Spunbond + Pulp (SP)</p>
+              </div>
+            </div>
+          </div>
+          <div class="icon_box">
+            <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types4">
+              <div class="icon">
+                <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
+                <img src="img/home/icon_p.png" class="img-responsive icon_p">
+                <img src="img/home/icon_n.png" class="img-responsive icon_n">
+              </div>
+              <div class="text">
+                <p class="text_xs color_white">100% Carded</p>
+              </div>
+            </div>
+            <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types5">
+              <div class="icon">
+                <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
+                <img src="img/home/icon_p.png" class="img-responsive icon_p">
+                <img src="img/home/icon_n.png" class="img-responsive icon_n">
+              </div>
+              <div class="text">
+                <p class="text_xs color_white">100% Wet laid</p>
+              </div>
+            </div>
+          </div>
+          <div class="icon_box">
+            <div class="tab_contant toTop" data-scroll id="types1">
+              <p class="text_md color_white">1 Spunbond + Pulp (SP)</p>
+              <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to
+                make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing,
+                drying, thermal calendering, etc. process.</p>
+            </div>
+            <div class="tab_contant" id="types2">
+              <p class="text_md color_white">2 Spunbond + Pulp (SP)</p>
+              <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to
+                make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing,
+                drying, thermal calendering, etc. process.</p>
+            </div>
+            <div class="tab_contant" id="types3">
+              <p class="text_md color_white">3 Spunbond + Pulp (SP)</p>
+              <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to
+                make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing,
+                drying, thermal calendering, etc. process.</p>
+            </div>
+            <div class="tab_contant" id="types4">
+              <p class="text_md color_white">4 Spunbond + Pulp (SP)</p>
+              <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to
+                make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing,
+                drying, thermal calendering, etc. process.</p>
+            </div>
+            <div class="tab_contant" id="types5">
+              <p class="text_md color_white">5 Spunbond + Pulp (SP)</p>
+              <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to
+                make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing,
+                drying, thermal calendering, etc. process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_5 ptb_100" id="how_we_roll">
+    <div class="container">
+      <div class="how pb_100">
+        <div class="title_info f_w_j pb_40">
+          <div class="title">
+            <h2 class="text_xxl n_b m_tb_0 toTop" data-scroll>
+              How we roll
+            </h2>
+          </div>
+          <div class="info toTop" data-scroll>
+            <p class="text_sm">We differentiate our nonwoven with our unique solutions, superior
+              technology and top-notch infrastructure. Our inline nonwoven technology combines
+              the structural strength of spunlaid with the haptic qualities of carded nonwoven.</p>
+          </div>
+        </div>
+        <h4 class="text_xl text_center n_s_b pb_40 toTop" data-scroll>Technologies used</h4>
+        <img src="img/home/roll_m.jpg" class="img-responsive toTop visible-xs" data-scroll>
+        <div class="roll hidden-xs">
+          <img src="img/home/roll.png" class="img-responsive margin_a roll_img_a" alt="">
+          <div class="box box_1">
+            <div class="title_icon f_w_a">
+              <div class="title">
+                <h4 class="text_reg n_s_b">Chemical<br class="hidden-xs">
+                  bonding</h4>
+              </div>
+              <div class="icon">
+                <img src="img/home/chemical.png" class="img-responsive">
+              </div>
+            </div>
+          </div>
+          <div class="box box_2">
+            <div class="title_icon f_w_a">
+              <div class="title">
+                <h4 class="text_reg n_s_b">Thermal
+                  <br class="hidden-xs">
+                  bonding</h4>
+              </div>
+              <div class="icon">
+                <img src="img/home/chemical.png" class="img-responsive">
+              </div>
+            </div>
+          </div>
+          <div class="box box_3">
+            <div class="title_icon f_w_a">
+              <div class="icon">
+                <img src="img/home/chemical.png" class="img-responsive">
+                <h4 class="text_reg n_s_b text_center">Melt spun</h4>
+              </div>
+            </div>
+          </div>
+          <div class="box box_4">
+            <div class="title_icon f_w_a">
+              <div class="icon">
+                <img src="img/home/chemical.png" class="img-responsive">
+              </div>
+              <div class="title">
+                <h4 class="text_reg n_s_b">Wetlaid</h4>
+              </div>
+            </div>
+          </div>
+          <div class="box box_5">
+            <div class="title_icon f_w_a">
+              <div class="icon">
+                <img src="img/home/chemical.png" class="img-responsive">
+              </div>
+              <div class="title">
+                <h4 class="text_reg n_s_b">Drylaid</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_6 ptb_100">
+    <div class="container">
+      <h2 class="text_xxl n_b pb_20 toTop" data-scroll>Elixrr magic</h2>
+      <div class="magic">
+        <div class="magic_title d_f toTop hidden-xs" data-scroll>
+          <h6 class="text_md n_b">Raw material</h6>
+          <h6 class="text_md n_b">Value additions</h6>
+          <h6 class="text_md n_b">Features</h6>
+          <h6 class="text_md n_b">End products</h6>
+        </div>
+        <div class="magic_box_section f_w">
+          <div class="magic_box">
+            <h6 class="text_md n_b text_md_m visible-xs toTop" data-scroll>Raw material</h6>
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/fiber.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Natural fibres</h5>
+              </div>
+            </div>
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/man.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Synthetic &<br class="hidden-xs">
+                  Man-made fibres</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="magic_box">
+            <h6 class="text_md n_b text_md_m visible-xs toTop" data-scroll>Value additions</h6>
+            <div class="faq_section">
+              <div class="faq_box faq_box1 toTop" data-scroll>
+                <a href="javascript:void(0)" class="faq_title text_sm m_b">
+                  <div class="icon_text f_w_a">
+                    <div class="icon">
+                      <img src="img/home/coating.png" class="img-responsive">
+                    </div>
+                    <div class="text">
+                      <h5 class="text_xs n_b">Coating</h5>
+                    </div>
+                  </div>
+                  <i class="fa fa-minus"></i>
+                </a>
+                <div class="content text_sm" style="display:block">
+                  <div class="ul_section f_w">
+                    <ul>
+                      <li>Acid resistant</li>
+                      <li>Alkali resistant</li>
+                      <li>Solvent binder</li>
+                      <li>Flame resistance</li>
+                      <li>Dust repellent</li>
+                      <li>Anti-static</li>
+                    </ul>
+                    <ul>
+                      <li>Anti-microbial</li>
+                      <li>PTFE treatment</li>
+                      <li>Epoxy resin</li>
+                      <li>Odourless</li>
+                      <li>UV treated</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="faq_box toTop" data-scroll>
+                <a href="javascript:void(0)" class="faq_title text_sm m_b">
+                  <div class="icon_text f_w_a">
+                    <div class="icon">
+                      <img src="img/home/thermo.png" class="img-responsive">
+                    </div>
+                    <div class="text">
+                      <h5 class="text_xs n_b">Thermo-embossing</h5>
+                    </div>
+                  </div>
+                  <i class="fa fa-plus"></i>
+                </a>
+                <div class="content text_sm">
+                  <div class="ul_section f_w">
+                    <ul>
+                      <li>Acid resistant</li>
+                      <li>Alkali resistant</li>
+                      <li>Solvent binder</li>
+                      <li>Flame resistance</li>
+                      <li>Dust repellent</li>
+                      <li>Anti-static</li>
+                    </ul>
+                    <ul>
+                      <li>Anti-microbial</li>
+                      <li>PTFE treatment</li>
+                      <li>Epoxy resin</li>
+                      <li>Odourless</li>
+                      <li>UV treated</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="faq_box toTop" data-scroll>
+                <a href="javascript:void(0)" class="faq_title text_sm m_b">
+                  <div class="icon_text f_w_a">
+                    <div class="icon">
+                      <img src="img/home/resin.png" class="img-responsive">
+                    </div>
+                    <div class="text">
+                      <h5 class="text_xs n_b">Advanced Resin
+                        Technology (ART)</h5>
+                    </div>
+                  </div>
+                  <i class="fa fa-plus"></i>
+                </a>
+                <div class="content text_sm toTop" data-scroll>
+                  <div class="ul_section f_w">
+                    <ul>
+                      <li>Acid resistant</li>
+                      <li>Alkali resistant</li>
+                      <li>Solvent binder</li>
+                      <li>Flame resistance</li>
+                      <li>Dust repellent</li>
+                      <li>Anti-static</li>
+                    </ul>
+                    <ul>
+                      <li>Anti-microbial</li>
+                      <li>PTFE treatment</li>
+                      <li>Epoxy resin</li>
+                      <li>Odourless</li>
+                      <li>UV treated</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/print.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Printing</h5>
+              </div>
+            </div>
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/calen.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Calendaring</h5>
+              </div>
+            </div>
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/dyeing.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Dyeing</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="magic_box toTop" data-scroll>
+            <h6 class="text_md n_b text_md_m visible-xs toTop" data-scroll>Features</h6>
+            <ul>
+              <li>Soft</li>
+              <li>Lint-free</li>
+              <li>Bulky</li>
+              <li>High-performance</li>
+              <li>Superior look and feel</li>
+              <li>100% biodegradable*</li>
+              <li>Flexible</li>
+              <li>High-strength</li>
+              <li>Highly absorbent</li>
+            </ul>
+            <p class="text_xxs">*Based on fibre-blend and
+              after process</p>
+          </div>
+
+          <div class="magic_box">
+            <h6 class="text_md n_b text_md_m visible-xs toTop" data-scroll>End products</h6>
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/end_1.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Lorem ipsum</h5>
+              </div>
+            </div>
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/end_2.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Lorem ipsum</h5>
+              </div>
+            </div>
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/end_3.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Lorem ipsum</h5>
+              </div>
+            </div>
+            <div class="icon_text f_w_a toTop" data-scroll>
+              <div class="icon">
+                <img src="img/home/end_4.png" class="img-responsive">
+              </div>
+              <div class="text">
+                <h5 class="text_xs n_b">Lorem ipsum</h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_7 ptb_100">
+    <div class="container">
+      <div class="title_info f_w_j pb_50">
+        <div class="title toTop" data-scroll>
+          <h2 class="text_xxl n_b m_tb_0">
+            Markets we cover
+          </h2>
+        </div>
+        <div class="info toTop" data-scroll>
+          <p class="text_sm">We can help you design and deliver useful, sustainable
+            solutions for various markets to ensure perfect hygiene. We are currently
+            focused on the spunlace nonwoven technology. </p>
+        </div>
+      </div>
+    </div>
+    <div class="markets toTop" data-scroll>
+      <div class="markets_slider">
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/personal.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">Personal care</h6>
+        </div>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/home.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">Home care</h6>
+        </div>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/baby.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">Baby wipes</h6>
+        </div>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/medical.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">Medical care</h6>
+        </div>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/sustainability.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">Sustainability</h6>
+        </div>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/industrial.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm f_w_s n_s_b">Industrial</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_8 ptb_100" id="infrastructure">
+    <div class="container">
+      <div class="our f_w">
+        <div class="info toTop" data-scroll>
+          <h2 class="text_xxl color_white n_b">
+            Our infrastructure
+          </h2>
+          <p class="text_sm color_white toTop" data-scroll>Ours is a Greenfield project with a fully automated industry
+            4.0 plant.
+            A majority of our operations are automated, right from raw material loading
+            to final packaging and storage. Most of our technology partners are European
+            and leaders in their industry.</p>
+          <p class="text_sm color_white toTop" data-scroll>
+            Built over an area of 15,000 square metres, our facility can produce
+            16,000 to 18,000 tonnes of nonwoven fabric rolls in a year with just
+            one production line. We have the capacity to expand to include two more
+            production lines in the future.
+          </p>
+        </div>
+        <div class="map toTop" data-scroll>
+          <img src="img/home/map.png" class="img-responsive" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_9 ptb_100" id="why_choose_us">
+    <div class="container">
+      <div class="title_info f_w_j pb_50">
+        <div class="title toTop" data-scroll>
+          <h2 class="text_xxl n_b m_tb_0">
+            Why <br class="hidden-xs">
+            choose us
+          </h2>
+        </div>
+        <div class="info toTop" data-scroll>
+          <p class="text_sm">The rise in the use of nonwoven fabrics has opened up doors to great opportunities for the
+            nonwoven industry. To cater to the growing demand of modern consumers, you need new and useful products of
+            superior quality. </p>
+          <p class="text_sm">Keeping that in mind, we employ top-notch technologies to create a range of quality
+            nonwoven fabrics. We can help you design versatile products that fit right into the lifestyle of your
+            customers.</p>
+        </div>
+      </div>
+      <h4 class="text_xl n_s_b">Our nonwoven fabrics are:</h4>
+    </div>
+    <div class="icon_slider toTop" data-scroll>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Eco-friendly</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Cost-efficient</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Superior in<br>
+              look and feel </p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">100%<br>
+              biodegradable </p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Flexible</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Highly absorbent</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Customised<br>
+              solutions</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Collaboration<br>
+              capabilities</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Personalised<br>
+              customer service</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">High-performance<br>
+              fibre blends</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">High-performance<br>
+              fibre blends</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="icon_info f_w_a">
+          <div class="icon">
+            <img src="img/home/eco.png" class="img-responsive" alt="">
+          </div>
+          <div class="info">
+            <p class="text_reg n_s_b">Robotic System</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section_10 ptb_100" id="sustainability">
+    <div class="container">
+      <div class="title_info f_w_j pb_50">
+        <div class="title toTop" data-scroll>
+          <h2 class="text_xxl n_b m_tb_0">
+            Our
+            <br class="hidden-xs">
+            sustainability
+          </h2>
+        </div>
+        <div class="info toTop" data-scroll>
+          <p class="text_sm">
+            We make sustainable products that use green sources and solutions.
+            The majority of our power needs are met through green sources like solar
+            energy. Moreover, our manufacturing plant is designed on a cleanroom
+            environment principle to provide us with the cleanest work area possible.
+          </p>
+        </div>
+      </div>
+      <h4 class="text_xl n_s_b toTop" data-scroll>Our eco-friendly parameters</h4>
+      <div class="our_sustainability f_w_j pb_50 toTop" data-scroll>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/esg.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">ESG</h6>
+        </div>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/solar.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">Solar energy</h6>
+        </div>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/traceability.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">Traceability</h6>
+        </div>
+        <div class="slider">
+          <div class="blog_img">
+            <img src="img/home/zero.jpg" class="img-responsive">
+          </div>
+          <h6 class="text_sm pt_10 f_w_s n_s_b">Zero Liquid Discharge (ZLD)</h6>
+        </div>
+      </div>
+      <div class="environmentally f_w_j">
+        <div class="box">
+          <h4 class="text_xl color_white n_b m_tb_0 f_w_s n_s_b">Our environmentally<br class="hidden-xs">
+            friendly certifications</h4>
+        </div>
+        <div class="box f_w_a">
+          <div class="img">
+            <img src="img/home/leed.png" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <p class="text_sm color_white m_tb_0 f_w_s n_s_b">Aiming for LEED<br class="hidden-xs">
+              Certified Plant</p>
+          </div>
+        </div>
+        <div class="box f_w_a">
+          <div class="img">
+            <img src="img/home/iso.png" alt="" class="img-responsive">
+          </div>
+          <div class="info">
+            <p class="text_sm color_white m_tb_0 f_w_s n_s_b">Under process for<br class="hidden-xs">
+              ISO 14001:2015</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <section class="section_1">
-      <div class="banner_slider overflow_h">
-        <div class="slider">
-          <picture>
-            <source
-              media="(max-width:767px)"
-              srcset="img/home/dekstop_banner.jpg"
-              alt=""
-            />
-            <img
-              src="img/home/dekstop_banner.jpg"
-              class="img-responsive width_100"
-            />
-          </picture>
-          <div class="slider_info text_center">
-            <h2 class="text_xxxxl color_white n_b">
-              Elixrr for your <br class="hidden-xs" />
-              nonwoven goods
-            </h2>
-            <h3 class="text_l color_white n_r">To make the future greener for generations to come</h3>
-            <div class="btn_section pt_30">
-              <a href="#" class="primary_btn text_sm">Shop Now</a>
-            </div>
-          </div>
-          <div class="scroll_down text_center">
-            <a class="scrollTo" href="#who_we_are">
-              <div class="scroll_down_arrow">
-                <img src="img/home/scroll_down.png" class="img-responsive margin_a">
-              </div>
-              <h6 class="text_xxs text_uppercase pt_10">Scroll Down</h6>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+  </section>
 
-    <section class="section_2 ptb_100" id="who_we_are">
-      <div class="container">
-        <div class="stamp start toTop" data-scroll></div>
-        <div class="who">
-          <h4 class="text_md text_uppercase toTop" data-scroll>Who we are</h4>
-          <h3 class="text_xxxl n_s_b toTop" data-scroll>We are one of the first nonwoven
-            <br class="hidden-xs"> fabric manufacturers in the world <br class="hidden-xs">
-            to use the 5+ Nonwoven Technology. </h3>
-            <div class="para_text_w toTop" data-scroll>
-              <p class="text_sm">With our capability to integrate more than five technologies in one line, 
-                we can produce customised, high-quality and cost-effective nonwoven fabrics.
-              </p>
-              <p class="text_sm">We come equipped with the experience and expertise of Tufropes-one of the 
-                top five manufacturers and exporters of synthetic ropes and nets in the world.</p>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section_3 pb_100" id="what_we_do">
-      <div class="container">
-        <div class="what">
-          <h2 class="text_xxl text_center n_b toTop" data-scroll>What we do</h2>
-          <p class="text_sm text_center toTop" data-scroll>With our unique technological capabilities, we
-            <br class="hidden-xs">
-             can make a range of nonwoven fabric rolls. </p>
-             <img src="img/home/what_m.jpg" class="img-responsive visible-xs toTop" data-scroll>
-             <div class="what_img margin_a hidden-sm-xs">
-              <img src="img/home/what.png" class="img-responsive pt_20">
-              <div class="what_text_1">
-                <p class="text_sm n_s_b">We blend natural and<br class="hidden-xs"> synthetic fibres</p>
-              </div>
-              <div class="what_text_2">
-                <p class="text_sm n_s_b">
-                  We manufacture different types<br class="hidden-xs"> of hydroentangled nonwovens
-                </p>
-              </div>
-              <div class="what_text_3">
-                <p class="text_sm n_s_b">
-                  We make high-performance<br class="hidden-xs"> nonwoven fabrics
-                </p>
-              </div>
-            </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section_4 ptb_100">
-      <div class="container">
-        <div class="types">
-          <h2 class="text_xxl color_white n_b toTop" data-scroll>
-            Types of nonwovens we make
+  <section class="section_11 pb_100" id="legacy">
+    <div class="container">
+      <div class="title_info f_w_j">
+        <div class="title toTop" data-scroll>
+          <h2 class="text_xxl n_b m_tb_0">
+            Our legacy
           </h2>
-          <h4 class="text_xl color_white n_s_b m_tb_0 pb_40 toTop" data-scroll>
-            Based on processes:
-          </h4>
-          <div class="types_section f_w">
-            <div class="icon_box">
-              <div class="box f_w_a ptb_20 btn toTop active" data-scroll data-id="types1">
-                <div class="icon">
-                  <img src="img/home/icon_card.png" class="img-responsive margin_a">
-                  <img src="img/home/icon_p.png" class="img-responsive icon_p">
-                  <img src="img/home/icon_n.png" class="img-responsive icon_n">
-                </div>
-                <div class="text">
-                  <p class="text_xs color_white">Card + Spunbond
-                    + Pulp (CSP)</p>
-                </div>
-              </div>
-              <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types2">
-                <div class="icon">
-                  <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
-                  <img src="img/home/icon_p.png" class="img-responsive icon_p">
-                  <img src="img/home/icon_n.png" class="img-responsive icon_n">
-                </div>
-                <div class="text">
-                  <p class="text_xs color_white">Card + Pulp (CP)</p>
-                </div>
-              </div>
-              <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types3">
-                <div class="icon">
-                  <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
-                  <img src="img/home/icon_p.png" class="img-responsive icon_p">
-                  <img src="img/home/icon_n.png" class="img-responsive icon_n">
-                </div>
-                <div class="text">
-                  <p class="text_xs color_white">Spunbond + Pulp (SP)</p>
-                </div>
-              </div>
-            </div>
-            <div class="icon_box">
-              <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types4">
-                <div class="icon">
-                  <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
-                  <img src="img/home/icon_p.png" class="img-responsive icon_p">
-                  <img src="img/home/icon_n.png" class="img-responsive icon_n">
-                </div>
-                <div class="text">
-                  <p class="text_xs color_white">100% Carded</p>
-                </div>
-              </div>
-              <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types5">
-                <div class="icon">
-                  <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
-                  <img src="img/home/icon_p.png" class="img-responsive icon_p">
-                  <img src="img/home/icon_n.png" class="img-responsive icon_n">
-                </div>
-                <div class="text">
-                  <p class="text_xs color_white">100% Wet laid</p>
-                </div>
-              </div>
-            </div>
-            <div class="icon_box">
-              <div class="tab_contant toTop" data-scroll id="types1">
-                <p class="text_md color_white">1 Spunbond + Pulp (SP)</p>
-                <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to 
-                  make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing, 
-                  drying, thermal calendering, etc. process.</p>
-              </div>
-              <div class="tab_contant" id="types2">
-                <p class="text_md color_white">2 Spunbond + Pulp (SP)</p> 
-                <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to 
-                  make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing, 
-                  drying, thermal calendering, etc. process.</p>
-              </div>
-              <div class="tab_contant" id="types3">
-                <p class="text_md color_white">3 Spunbond + Pulp (SP)</p>
-                <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to 
-                  make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing, 
-                  drying, thermal calendering, etc. process.</p>
-              </div>
-              <div class="tab_contant" id="types4">
-                <p class="text_md color_white">4 Spunbond + Pulp (SP)</p>
-                <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to 
-                  make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing, 
-                  drying, thermal calendering, etc. process.</p>
-              </div>
-              <div class="tab_contant" id="types5">
-                <p class="text_md color_white">5 Spunbond + Pulp (SP)</p>
-                <p class="text_sm color_white">The pulp fibre layer is placed between the first and the second web to 
-                  make Spunbond + Pulp (SP) nonwovens through melting, spinning, spun lacing, 
-                  drying, thermal calendering, etc. process.</p>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="info toTop" data-scroll>
+          <p class="text_sm">
+            With our strong industrial backing, wide distribution network and superior
+            technology, we are pioneering excellence in the nonwoven fabrics market.
+          </p>
         </div>
       </div>
-    </section>
-
-    <section class="section_5 ptb_100" id="how_we_roll">
-      <div class="container">
-        <div class="how pb_100">
-          <div class="title_info f_w_j pb_50">
-            <div class="title">
-              <h2 class="text_xxl n_b m_tb_0 toTop" data-scroll>
-                How we roll
-              </h2>
-            </div>
-            <div class="info toTop" data-scroll>
-              <p class="text_sm">We differentiate our nonwoven with our unique solutions, superior 
-                technology and top-notch infrastructure. Our inline nonwoven technology combines 
-                the structural strength of spunlaid with the haptic qualities of carded nonwoven.</p>
-            </div>
-          </div>
-          <h4 class="text_xl text_center n_s_b pb_40 toTop" data-scroll>Technologies used</h4>
-          <img src="img/home/roll_m.jpg" class="img-responsive toTop visible-xs" data-scroll>
-          <div class="roll hidden-xs">
-              <img src="img/home/roll.png" class="img-responsive margin_a roll_img_a" alt="">
-            <div class="box box_1">
-              <div class="title_icon f_w_a">
-                <div class="title">
-                  <h4 class="text_reg n_s_b">Chemical<br class="hidden-xs">
-                    bonding</h4>
-                </div>
-                <div class="icon">
-                  <img src="img/home/chemical.png" class="img-responsive"> 
-                </div>
-              </div>
-            </div>
-            <div class="box box_2">
-              <div class="title_icon f_w_a">
-                <div class="title">
-                  <h4 class="text_reg n_s_b">Thermal
-                    <br class="hidden-xs">
-                    bonding</h4>
-                </div>
-                <div class="icon">
-                  <img src="img/home/chemical.png" class="img-responsive"> 
-                </div>
-              </div>
-            </div>
-            <div class="box box_3">
-              <div class="title_icon f_w_a">
-                <div class="icon">
-                  <img src="img/home/chemical.png" class="img-responsive"> 
-                  <h4 class="text_reg n_s_b text_center">Melt spun</h4>
-                </div>
-              </div>
-            </div>
-            <div class="box box_4">
-              <div class="title_icon f_w_a">
-                <div class="icon">
-                  <img src="img/home/chemical.png" class="img-responsive"> 
-                </div>
-                <div class="title">
-                  <h4 class="text_reg n_s_b">Wetlaid</h4>
-                </div>
-              </div>
-            </div>
-            <div class="box box_5">
-              <div class="title_icon f_w_a">
-                <div class="icon">
-                  <img src="img/home/chemical.png" class="img-responsive"> 
-                </div>
-                <div class="title">
-                  <h4 class="text_reg n_s_b">Drylaid</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="legacy toTop" data-scroll>
+        <img src="img/home/legacy.jpg" class="img-responsive margin_a" alt="">
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section_6 ptb_100">
-      <div class="container">
-        <h2 class="text_xxl n_b pb_20 toTop" data-scroll>Elixrr magic</h2>
-        <div class="magic">
-          <div class="magic_title d_f toTop hidden-xs" data-scroll>
-            <h6 class="text_md n_b">Raw material</h6>
-            <h6 class="text_md n_b">Value additions</h6>
-            <h6 class="text_md n_b">Features</h6>
-            <h6 class="text_md n_b">End products</h6>
-          </div>
-          <div class="magic_box_section f_w">
-            <div class="magic_box">
-              <h6 class="text_md n_b text_md_m visible-xs toTop" data-scroll>Raw material</h6>
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/fiber.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Natural fibres</h5>
-                </div>
-              </div>
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/man.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Synthetic &<br class="hidden-xs">
-                    Man-made fibres</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="magic_box">
-              <h6 class="text_md n_b text_md_m visible-xs toTop" data-scroll>Value additions</h6>
-              <div class="faq_section">
-                <div class="faq_box faq_box1 toTop" data-scroll>
-                    <a href="javascript:void(0)" class="faq_title text_sm m_b">
-                      <div class="icon_text f_w_a">
-                        <div class="icon">
-                          <img src="img/home/coating.png" class="img-responsive">
-                        </div>
-                        <div class="text">
-                          <h5 class="text_xs n_b">Coating</h5>
-                        </div>
-                      </div>
-                        <i class="fa fa-minus"></i>
-                    </a>
-                    <div class="content text_sm" style="display:block">
-                        <div class="ul_section f_w">
-                          <ul>
-                            <li>Acid resistant</li>
-                            <li>Alkali resistant</li>
-                            <li>Solvent binder</li>
-                            <li>Flame resistance</li>
-                            <li>Dust repellent</li>
-                            <li>Anti-static</li>
-                          </ul>  
-                          <ul>
-                            <li>Anti-microbial</li>
-                            <li>PTFE treatment</li>
-                            <li>Epoxy resin</li>
-                            <li>Odourless</li>
-                            <li>UV treated</li>
-                          </ul> 
-                        </div>
-                    </div>
-                </div>
-                <div class="faq_box toTop" data-scroll>
-                    <a href="javascript:void(0)" class="faq_title text_sm m_b">
-                      <div class="icon_text f_w_a">
-                        <div class="icon">
-                          <img src="img/home/thermo.png" class="img-responsive">
-                        </div>
-                        <div class="text">
-                          <h5 class="text_xs n_b">Thermo-embossing</h5>
-                        </div>
-                      </div>
-                        <i class="fa fa-plus"></i>
-                    </a>
-                    <div class="content text_sm">
-                      <div class="ul_section f_w">
-                        <ul>
-                          <li>Acid resistant</li>
-                          <li>Alkali resistant</li>
-                          <li>Solvent binder</li>
-                          <li>Flame resistance</li>
-                          <li>Dust repellent</li>
-                          <li>Anti-static</li>
-                        </ul>  
-                        <ul>
-                          <li>Anti-microbial</li>
-                          <li>PTFE treatment</li>
-                          <li>Epoxy resin</li>
-                          <li>Odourless</li>
-                          <li>UV treated</li>
-                        </ul> 
-                      </div>
-                    </div>
-                </div>
-                <div class="faq_box toTop" data-scroll>
-                  <a href="javascript:void(0)" class="faq_title text_sm m_b">
-                    <div class="icon_text f_w_a">
-                      <div class="icon">
-                        <img src="img/home/resin.png" class="img-responsive">
-                      </div>
-                      <div class="text">
-                        <h5 class="text_xs n_b">Advanced Resin 
-                          Technology (ART)</h5>
-                      </div>
-                    </div>
-                      <i class="fa fa-plus"></i>
-                  </a>
-                  <div class="content text_sm toTop" data-scroll>
-                    <div class="ul_section f_w">
-                      <ul>
-                        <li>Acid resistant</li>
-                        <li>Alkali resistant</li>
-                        <li>Solvent binder</li>
-                        <li>Flame resistance</li>
-                        <li>Dust repellent</li>
-                        <li>Anti-static</li>
-                      </ul>  
-                      <ul>
-                        <li>Anti-microbial</li>
-                        <li>PTFE treatment</li>
-                        <li>Epoxy resin</li>
-                        <li>Odourless</li>
-                        <li>UV treated</li>
-                      </ul> 
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/print.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Printing</h5>
-                </div>
-              </div>
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/calen.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Calendaring</h5>
-                </div>
-              </div>
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/dyeing.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Dyeing</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="magic_box toTop" data-scroll>
-              <h6 class="text_md n_b text_md_m visible-xs toTop" data-scroll>Features</h6>
-              <ul>
-                <li>Soft</li>
-                <li>Lint-free</li>
-                <li>Bulky</li>
-                <li>High-performance</li>
-                <li>Superior look and feel</li>
-                <li>100% biodegradable*</li>
-                <li>Flexible</li>
-                <li>High-strength</li>
-                <li>Highly absorbent</li>
-              </ul>
-              <p class="text_xxs">*Based on fibre-blend and 
-                after process</p>
-            </div>
-
-            <div class="magic_box">
-              <h6 class="text_md n_b text_md_m visible-xs toTop" data-scroll>End products</h6>
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/end_1.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Lorem ipsum</h5>
-                </div>
-              </div>
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/end_2.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Lorem ipsum</h5>
-                </div>
-              </div>
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/end_3.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Lorem ipsum</h5>
-                </div>
-              </div>
-              <div class="icon_text f_w_a toTop" data-scroll>
-                <div class="icon">
-                  <img src="img/home/end_4.png" class="img-responsive">
-                </div>
-                <div class="text">
-                  <h5 class="text_xs n_b">Lorem ipsum</h5>
-                </div>
-              </div>
-            </div>
-
-          </div>
+  <section class="section_12 ptb_60">
+    <div class="counter f_r_aj_between toTop counter_slider" id="counter-stats" data-scroll>
+      <div class="box">
+        <div class="count_num d_f">
+          <!-- <h3 class="text_xxxl n_b m_tb_0 counting" data-count="7000">0</h3> -->
+          <h3 class="text_xxxl n_b m_tb_0">7000+</h3>
+          <!-- <span class="text_xxxl n_b m_tb_0">+</span> -->
         </div>
+        <p class="text_sm color_white">employees</p>
       </div>
-    </section>
-
-    <section class="section_7 ptb_100">
-        <div class="container">
-          <div class="title_info f_w_j pb_50">
-            <div class="title toTop" data-scroll>
-              <h2 class="text_xxl n_b m_tb_0">
-                Markets we cover
-              </h2>
-            </div>
-            <div class="info toTop" data-scroll>
-              <p class="text_sm">We can help you design and deliver useful, sustainable 
-                solutions for various markets to ensure perfect hygiene. We are currently 
-                focused on the spunlace nonwoven technology. </p>
-            </div>
-          </div>
+      <div class="box">
+        <div class="count_num d_f">
+          <h3 class="text_xxxl n_b m_tb_0">200+</h3>
         </div>
-        <div class="markets toTop" data-scroll>
-          <div class="markets_slider">
-            <div class="slider">
-              <div class="blog_img">
-                <img src="img/home/personal.jpg" class="img-responsive">
-              </div>
-                <h6 class="text_sm pt_10">Personal care</h6>
-            </div>
-            <div class="slider">
-              <div class="blog_img">
-                <img src="img/home/home.jpg" class="img-responsive">
-              </div>
-              <h6 class="text_sm pt_10">Home care</h6>
-            </div>
-            <div class="slider">
-              <div class="blog_img">
-                <img src="img/home/baby.jpg" class="img-responsive">
-              </div>
-              <h6 class="text_sm pt_10">Baby wipes</h6>
-            </div>
-            <div class="slider">
-              <div class="blog_img">
-                <img src="img/home/medical.jpg" class="img-responsive">
-              </div>
-              <h6 class="text_sm pt_10">Medical care</h6>
-            </div>
-            <div class="slider">
-              <div class="blog_img">
-                <img src="img/home/sustainability.jpg" class="img-responsive">
-              </div>
-              <h6 class="text_sm pt_10">Sustainability</h6>
-            </div>
-            <div class="slider">
-              <div class="blog_img">
-                <img src="img/home/industrial.jpg" class="img-responsive">
-              </div>
-              <h6 class="text_sm">Industrial</h6>
-            </div>
-          </div>
-        </div>
-    </section>
-
-    <section class="section_8 ptb_100" id="infrastructure">
-      <div class="container">
-        <div class="our f_w">
-          <div class="info toTop" data-scroll>
-            <h2 class="text_xxl color_white n_b">
-              Our infrastructure
-            </h2>
-            <p class="text_sm color_white toTop" data-scroll>Ours is a Greenfield project with a fully automated industry 
-              4.0 plant. 
-              A majority of our operations are automated, right from raw material loading 
-              to final packaging and storage. Most of our technology partners are European 
-              and leaders in their industry.</p>
-              <p class="text_sm color_white toTop" data-scroll>
-                Built over an area of 15,000 square metres, our facility can produce 
-                16,000 to 18,000 tonnes of nonwoven fabric rolls in a year with just 
-                one production line. We have the capacity to expand to include two more 
-                production lines in the future.
-              </p>
-          </div>
-          <div class="map toTop" data-scroll>
-            <img src="img/home/map.png" class="img-responsive" alt="">
-          </div>
-        </div>
+        <p class="text_sm color_white">million USD turnover</p>
       </div>
-    </section>
+      <div class="box">
+        <h3 class="text_xxxl n_b m_tb_0">17</h3>
+        <p class="text_sm color_white">manufacturing<br class="hidden-xs">
+          sites in India</p>
+      </div>
+      <div class="box">
+        <h3 class="text_xxxl n_b m_tb_0">60</h3>
+        <p class="text_sm color_white">million SQM yearly<br class="hidden-xs">
+          manufacturing</p>
+      </div>
+      <div class="box">
+        <h3 class="text_xxxl n_b m_tb_0">965</h3>
+        <p class="text_sm color_white">million SQM yearly<br class="hidden-xs">
+          manufacturing</p>
+      </div>
+      <div class="box">
+        <h3 class="text_xxxl n_b m_tb_0">200+</h3>
+        <p class="text_sm color_white">million kilogram<br class="hidden-xs">
+          polymer processing</p>
+      </div>
+      <div class="box">
+        <h3 class="text_xxxl n_b m_tb_0">9</h3>
+        <p class="text_sm color_white">9 billion bottles
+          <br class="hidden-xs">
+          recycled into fibres</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="section_9 ptb_100" id="why_choose_us">
-      <div class="container">
+  <section class="section_13 ptb_100" id="team">
+    <div class="container">
+      <div class="product_section">
         <div class="title_info f_w_j pb_50">
-            <div class="title toTop" data-scroll>
-              <h2 class="text_xxl n_b m_tb_0">
-                Why <br class="hidden-xs">
-                choose us
-              </h2>
-            </div>
-            <div class="info toTop" data-scroll>
-              <p class="text_sm">We can help you design and deliver useful, sustainable 
-                solutions for various markets to ensure perfect hygiene. We are currently 
-                focused on the spunlace nonwoven technology. </p>
-            </div>
-          </div>
-          <h4 class="text_xl n_s_b">Our nonwoven fabrics are:</h4>
-      </div>
-      <div class="icon_slider toTop" data-scroll>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Eco-friendly</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Cost-efficient</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Superior in<br>
-                look and feel </p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">100%<br>
-                biodegradable </p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Flexible</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Highly absorbent</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Customised<br>
-                solutions</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Collaboration<br>
-                capabilities</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Personalised<br>
-                customer service</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">High-performance<br>
-                fibre blends</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">High-performance<br>
-                fibre blends</p>
-            </div>
-          </div>
-        </div>
-        <div class="slider">
-          <div class="icon_info f_w_a">
-            <div class="icon">
-              <img src="img/home/eco.png" class="img-responsive" alt="">
-            </div>
-            <div class="info">
-              <p class="text_reg n_s_b">Robotic System</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section_10 ptb_100" id="sustainability">
-      <div class="container">
-        <div class="title_info f_w_j pb_50">
-            <div class="title toTop" data-scroll>
-              <h2 class="text_xxl n_b m_tb_0">
-                Our 
-                <br class="hidden-xs">
-                sustainability
-              </h2>
-            </div>
-            <div class="info toTop" data-scroll>
-              <p class="text_sm">
-                We make sustainable products that use green sources and solutions. 
-                The majority of our power needs are met through green sources like solar 
-                energy. Moreover, our manufacturing plant is designed on a cleanroom 
-                environment principle to provide us with the cleanest work area possible.
-              </p>
-            </div>
-        </div>
-        <h4 class="text_xl n_s_b toTop" data-scroll>Our eco-friendly parameters</h4>
-        <div class="our_sustainability f_w_j pb_50 toTop" data-scroll>
-          <div class="slider">
-            <div class="blog_img">
-              <img src="img/home/esg.jpg" class="img-responsive">
-            </div>
-              <h6 class="text_sm pt_10">ESG</h6>
-          </div>
-          <div class="slider">
-            <div class="blog_img">
-              <img src="img/home/solar.jpg" class="img-responsive">
-            </div>
-            <h6 class="text_sm pt_10">Solar energy</h6>
-          </div>
-          <div class="slider">
-            <div class="blog_img">
-              <img src="img/home/traceability.jpg" class="img-responsive">
-            </div>
-            <h6 class="text_sm pt_10">Traceability</h6>
-          </div>
-          <div class="slider">
-            <div class="blog_img">
-              <img src="img/home/zero.jpg" class="img-responsive">
-            </div>
-            <h6 class="text_sm pt_10">Zero Liquid Discharge (ZLD)</h6>
-          </div>
-        </div>
-        <div class="environmentally f_w_j">
-          <div class="box">
-            <h4 class="text_xl color_white n_b m_tb_0">Our environmentally<br class="hidden-xs">
-              friendly certifications</h4>
-          </div>
-          <div class="box f_w_a">
-            <div class="img">
-              <img src="img/home/leed.png" alt="" class="img-responsive">
-            </div>
-            <div class="info">
-              <p class="text_sm color_white m_tb_0">Aiming for LEED<br class="hidden-xs">
-                Certified Plant</p>
-            </div>
-          </div>
-          <div class="box f_w_a">
-            <div class="img">
-              <img src="img/home/iso.png" alt="" class="img-responsive">
-            </div>
-            <div class="info">
-              <p class="text_sm color_white m_tb_0">Under process for<br class="hidden-xs">
-                ISO 14001:2015</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-
-    <section class="section_11 pb_100" id="legacy">
-      <div class="container">
-        <div class="title_info f_w_j">
-            <div class="title toTop" data-scroll>
-              <h2 class="text_xxl n_b m_tb_0">
-                Our legacy
-              </h2>
-            </div>
-            <div class="info toTop" data-scroll>
-              <p class="text_sm">
-                With our strong industrial backing, wide distribution network and superior 
-                technology, we are pioneering excellence in the nonwoven fabrics market.
-              </p>
-            </div>
-        </div>
-        <div class="legacy toTop" data-scroll>
-          <img src="img/home/legacy.jpg" class="img-responsive margin_a" alt="">
-        </div>
-      </div>
-    </section>
-
-    <section class="section_12 ptb_60">
-        <div class="counter f_r_aj_between toTop counter_slider" id="counter-stats" data-scroll>
-          <div class="box">
-            <div class="count_num d_f">
-              <!-- <h3 class="text_xxxl n_b m_tb_0 counting" data-count="7000">0</h3> -->
-              <h3 class="text_xxxl n_b m_tb_0">7000+</h3>
-              <!-- <span class="text_xxxl n_b m_tb_0">+</span> -->
-            </div>
-            <p class="text_sm color_white">employees</p>
-          </div>
-          <div class="box">
-            <div class="count_num d_f">
-            <h3 class="text_xxxl n_b m_tb_0">200+</h3>
-          </div>
-            <p class="text_sm color_white">million USD turnover</p>
-          </div>
-          <div class="box">
-            <h3 class="text_xxxl n_b m_tb_0">17</h3>
-            <p class="text_sm color_white">manufacturing<br class="hidden-xs">
-              sites in India</p>
-          </div>
-          <div class="box">
-            <h3 class="text_xxxl n_b m_tb_0">60</h3>
-            <p class="text_sm color_white">million SQM yearly<br class="hidden-xs">
-              manufacturing</p>
-          </div>
-          <div class="box">
-            <h3 class="text_xxxl n_b m_tb_0">965</h3>
-            <p class="text_sm color_white">million SQM yearly<br class="hidden-xs">
-              manufacturing</p>
-          </div>
-          <div class="box">
-            <h3 class="text_xxxl n_b m_tb_0">200+</h3>
-            <p class="text_sm color_white">million kilogram<br class="hidden-xs">
-              polymer processing</p>
-          </div>
-          <div class="box">
-            <h3 class="text_xxxl n_b m_tb_0">9</h3>
-            <p class="text_sm color_white">9 billion bottles
-              <br class="hidden-xs">
-              recycled into fibres</p>
-          </div>
-        </div>
-    </section>
-
-    <section class="section_13 ptb_100" id="team">
-      <div class="container">
-        <div class="product_section">
-          <div class="title_info f_w_j pb_50">
-            <div class="title toTop" data-scroll>
-              <h2 class="text_xxl n_b m_tb_0">
-                Our team
-              </h2>
-            </div>
-            <div class="info toTop" data-scroll>
-              <p class="text_sm">
-                We thank our talented team of groundbreakers and<br class="hidden-xs"> 
-                entrepreneurs for bringing innovations to life.
-              </p>
-            </div>
-        </div>
-            <div class="tab_section">
-                <div class="button_style mob_tb_1 toTop " data-scroll>
-                    <h5 class="main_tab_btn f_w_a toTop" data-scroll>
-                        <span class="btn text_xxs n_b active" data-id="founding" tabindex="0">Founding Team</span>
-                        <span class="btn text_xxs n_b" data-id="promoters" tabindex="0">Promoters</span>
-                        <span class="btn text_xxs n_b" data-id="technical" tabindex="0">Technical Personalities</span>
-                        <span class="btn text_xxs n_b" data-id="other" tabindex="0">Other Renowned Personalities on Board</span>
-                    </h5>
-                </div>
-
-                <div class="slider_section" id="founding">
-                  <div class="product_slider_tab">
-                    <div class="slider">
-                        <img src="img/home/team_member_1.png" class="img-responsive">
-                        <h6 class="text_sm n_s_b">James Cameron</h6>
-                        <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                  </div>
-                  <div class="slider">
-                    <img src="img/home/team_member_1.png" class="img-responsive">
-                    <h6 class="text_sm n_s_b">James Cameron</h6>
-                    <p class="text_xs">Co-founder, Ceo</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="slider_section" id="promoters">
-                  <div class="product_slider_tab">
-                    <div class="slider">
-                        <img src="img/home/team_member_1.png" class="img-responsive">
-                        <h6 class="text_sm n_s_b">James Cameron</h6>
-                        <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                  </div>
-                  <div class="slider">
-                    <img src="img/home/team_member_1.png" class="img-responsive">
-                    <h6 class="text_sm n_s_b">James Cameron</h6>
-                    <p class="text_xs">Co-founder, Ceo</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="slider_section" id="technical">
-                  <div class="product_slider_tab">
-                    <div class="slider">
-                        <img src="img/home/team_member_1.png" class="img-responsive">
-                        <h6 class="text_sm n_s_b">James Cameron</h6>
-                        <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                  </div>
-                  <div class="slider">
-                    <img src="img/home/team_member_1.png" class="img-responsive">
-                    <h6 class="text_sm n_s_b">James Cameron</h6>
-                    <p class="text_xs">Co-founder, Ceo</p>
-                  </div>
-                  </div>
-                </div>
-                <div class="slider_section" id="other">
-                  <div class="product_slider_tab">
-                    <div class="slider">
-                        <img src="img/home/team_member_1.png" class="img-responsive">
-                        <h6 class="text_sm n_s_b">James Cameron</h6>
-                        <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                    </div>
-                    <div class="slider">
-                      <img src="img/home/team_member_1.png" class="img-responsive">
-                      <h6 class="text_sm n_s_b">James Cameron</h6>
-                      <p class="text_xs">Co-founder, Ceo</p>
-                  </div>
-                  <div class="slider">
-                    <img src="img/home/team_member_1.png" class="img-responsive">
-                    <h6 class="text_sm n_s_b">James Cameron</h6>
-                    <p class="text_xs">Co-founder, Ceo</p>
-                  </div>
-                  </div>
-                </div>
-            </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="section_14 ptb_100" id="contact_us">
-      <div class="container">
-        <div class="connect f_w">
-          <div class="add toTop" data-scroll>
+          <div class="title toTop" data-scroll>
             <h2 class="text_xxl n_b m_tb_0">
-              Let's connect
+              Our team
             </h2>
-            <ul class="toTop" data-scroll>
-              <li><img src="img/home/loaction.png" class="img-responsive info_img">
-                <p class="text_md n_b m_tb_0">Elixrr Pvt Ltd</p>
-                <p class="text_sm">3, 25-26, Nariman Point, Mumbai, Maharashtra 400021</p>
-              </li>
-              <li><img src="img/home/call.png" class="img-responsive info_img">
-                <a href="tel:022 4050 2600" class="text_sm">022 4050 2600</a>
-              </li>
-            </ul>
           </div>
-          <div class="connect_form toTop" data-scroll>
-            <form action="/action_page.php" class="form f_w_a">
-              <div class="form_field toTop" data-scroll>
-                <input type="text" id="name" name="name"  placeholder="Name">
-              </div>
-              <div class="form_field toTop" data-scroll>
-                <input type="email" id="email" name="email" placeholder="Email ID">
-              </div>
-              <div class="form_field toTop" data-scroll>
-                <input type="text" id="number" name="number" placeholder="Contact Number">
-              </div>
-              <div class="form_field toTop" data-scroll>
-                <select name="cars" id="cars">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="opel">Opel</option>
-                  <option value="audi">Audi</option>
-                </select>
-              </div>
-              <div class="form_field textarea_width toTop" data-scroll>
-                <textarea id="message" placeholder="Message" name="message"></textarea>
-              </div>
-              <div class="btn_section pl_20 toTop" data-scroll>
-                <p  type="submit" class="primary_btn n_s_b text_xs m_tb_0">Send</p>
-              </div>
-            </form> 
+          <div class="info toTop" data-scroll>
+            <p class="text_sm">
+              We thank our talented team of groundbreakers and<br class="hidden-xs">
+              entrepreneurs for bringing innovations to life.
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-          <div class="footer_strip d_f">
-              <div class="strip_item">
-                  <p class="para">Copyright &#169; 2022 Copyright Elixrr Pvt Ltd</p>
-              </div>
-              <div class="strip_item social_link">
-                  <a href="#">
-                      <img src="img/home/face.png" alt="facebook" class="img-responsive face">
-                  </a>
-                  <a href="#">
-                    <img src="img/home/insta.png" alt="insta" class="img-responsive">
-                  </a>
-                  <a href="#">
-                    <img src="img/home/link.png" alt="link" class="img-responsive">
-                  </a>
-                  <a href="#">
-                    <img src="img/home/tw.png" alt="tw" class="img-responsive">
-                  </a>
-              </div>
-              <div class="strip_item">
-                  <a href="https://www.ting.in/" target="_blank">
-                      <img src="img/ting.svg" alt="ting logo">
-                  </a>
-              </div>
+        <div class="tab_section">
+          <div class="button_style mob_tb_1 toTop " data-scroll>
+            <h5 class="main_tab_btn f_w_a toTop" data-scroll>
+              <span class="btn text_xxs n_b active" data-id="founding" tabindex="0">Founding Team</span>
+              <span class="btn text_xxs n_b" data-id="promoters" tabindex="0">Promoters</span>
+              <span class="btn text_xxs n_b" data-id="technical" tabindex="0">Technical Personalities</span>
+              <span class="btn text_xxs n_b" data-id="other" tabindex="0">Other Renowned Personalities on Board</span>
+            </h5>
           </div>
+
+          <div class="slider_section" id="founding">
+            <div class="product_slider_tab">
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider_section" id="promoters">
+            <div class="product_slider_tab">
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider_section" id="technical">
+            <div class="product_slider_tab">
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider_section" id="other">
+            <div class="product_slider_tab">
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+              <div class="slider">
+                <img src="img/home/team_member_1.png" class="img-responsive">
+                <h6 class="text_sm n_s_b">James Cameron</h6>
+                <p class="text_xs">Co-founder, Ceo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/scroll-out.min.js"></script>
-    <!--      <script src="js/jquery.fancybox.min.js"></script>-->
-    <script>
+  <section class="section_14 ptb_100" id="contact_us">
+    <div class="container">
+      <div class="connect f_w">
+        <div class="add toTop" data-scroll>
+          <h2 class="text_xxl n_b m_tb_0">
+            Let's connect
+          </h2>
+          <ul class="toTop" data-scroll>
+            <li><img src="img/home/loaction.png" class="img-responsive info_img">
+              <p class="text_md n_b m_tb_0">Elixrr Pvt Ltd</p>
+              <p class="text_sm">3, 25-26, Nariman Point, Mumbai, Maharashtra 400021</p>
+            </li>
+            <li><img src="img/home/call.png" class="img-responsive info_img">
+              <a href="tel:022 4050 2600" class="text_sm">022 4050 2600</a>
+            </li>
+          </ul>
+        </div>
+        <div class="connect_form toTop" data-scroll>
+          <!-- <form action="/action_page.php" class="form f_w_a"> -->
+          <form class="form f_w_a">
+            <div class="form_field toTop" data-scroll>
+              <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form_field toTop" data-scroll>
+              <input type="email" id="email" name="email" placeholder="Email ID" required>
+            </div>
+            <div class="form_field toTop" data-scroll>
+              <input type="text" id="number" name="number" placeholder="Contact Number" required>
+            </div>
+            <div class="form_field toTop" data-scroll>
+              <select name="city" id="city" required>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Thane">Thane</option>
+                <option value="Nashik">Nashik</option>
+              </select>
+            </div>
+            <div class="form_field textarea_width toTop" data-scroll>
+              <textarea id="message" placeholder="Message" name="message"></textarea>
+            </div>
+            <div class="btn_section pl_20 toTop" data-scroll>
+              <button type="submit" class="primary_btn n_s_b text_xs m_tb_0">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer_strip d_f">
+        <div class="strip_item">
+          <p class="para">Copyright &#169; 2022 Copyright Elixrr Pvt Ltd</p>
+        </div>
+        <div class="strip_item social_link">
+          <a href="#">
+            <img src="img/home/face.png" alt="facebook" class="img-responsive face">
+          </a>
+          <a href="#">
+            <img src="img/home/insta.png" alt="insta" class="img-responsive">
+          </a>
+          <a href="#">
+            <img src="img/home/link.png" alt="link" class="img-responsive">
+          </a>
+          <a href="#">
+            <img src="img/home/tw.png" alt="tw" class="img-responsive">
+          </a>
+        </div>
+        <div class="strip_item">
+          <a href="https://www.ting.in/" target="_blank">
+            <img src="img/ting.svg" alt="ting logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/scroll-out.min.js"></script>
+  <!--      <script src="js/jquery.fancybox.min.js"></script>-->
+  <script>
+    // number count for stats, using jQuery animate
+
+    // $('.counting').each(function() {
+    //   var $this = $(this),
+    //       countTo = $this.attr('data-count');
+
+    //   $({ countNum: $this.text()}).animate({
+    //     countNum: countTo
+    //   },
+
+    //   {
+
+    //     duration: 3000,
+    //     easing:'linear',
+    //     step: function() {
+    //       $this.text(Math.floor(this.countNum));
+    //     },
+    //     complete: function() {
+    //       $this.text(this.countNum);
+    //       //alert('finished');
+    //     }
+
+    //   });  
 
 
-// number count for stats, using jQuery animate
-
-// $('.counting').each(function() {
-//   var $this = $(this),
-//       countTo = $this.attr('data-count');
-  
-//   $({ countNum: $this.text()}).animate({
-//     countNum: countTo
-//   },
-
-//   {
-
-//     duration: 3000,
-//     easing:'linear',
-//     step: function() {
-//       $this.text(Math.floor(this.countNum));
-//     },
-//     complete: function() {
-//       $this.text(this.countNum);
-//       //alert('finished');
-//     }
-
-//   });  
-  
-
-// });
+    // });
 
 
-  $(".tab_contant").hide();
+    $(".tab_contant").hide();
     $(".tab_contant:first").show();
-    $(".btn").click(function() {
-        var getAttr = $(this).attr("data-id");
-        $(".tab_contant").hide();
-        $("#" + getAttr).show();
-        $(".btn").removeClass("active");
-        $(this).addClass("active");
-  });
+    $(".btn").click(function () {
+      var getAttr = $(this).attr("data-id");
+      $(".tab_contant").hide();
+      $("#" + getAttr).show();
+      $(".btn").removeClass("active");
+      $(this).addClass("active");
+    });
 
- // scroll section
-    $('.scrollTo').click(function() {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
-        }, 500);
-        return false;
+    // scroll section
+    $('.scrollTo').click(function () {
+      $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+      }, 500);
+      return false;
     });
 
     $(document).ready(function (evt) {
-        setTimeout(function () {
-            $('.loader_overlay').addClass('start');
-        }, 500);
-        setTimeout(function () {
-            $('.loader_overlay').fadeOut(300);
-            $('body').css('overflow', 'visible');
+      setTimeout(function () {
+        $('.loader_overlay').addClass('start');
+      }, 500);
+      setTimeout(function () {
+        $('.loader_overlay').fadeOut(300);
+        $('body').css('overflow', 'visible');
 
-        }, 2000);
+      }, 2200);
     });
 
 
-      windowWidth = window.innerWidth;
-      var winW = $(window).outerWidth();
-      var winH = $(window).outerHeight();
+    windowWidth = window.innerWidth;
+    var winW = $(window).outerWidth();
+    var winH = $(window).outerHeight();
 
-      //scrollout
-      ScrollOut({
-        once: true,
-      });
-      ScrollOut({
-        targets: ".prlx",
-        cssProps: {
-          viewportY: true,
-        },
-      });
+    //scrollout
+    ScrollOut({
+      once: true,
+    });
+    ScrollOut({
+      targets: ".prlx",
+      cssProps: {
+        viewportY: true,
+      },
+    });
 
-      $(".banner_slider").slick({
-        // dots: true,
-        infinite: true,
-        speed: 500,
-        pauseOnHover: false,
-        fade: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
+    $(".banner_slider").slick({
+      // dots: true,
+      infinite: true,
+      speed: 500,
+      pauseOnHover: false,
+      fade: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
 
-      $(".counter_slider").slick({
+    $(".counter_slider").slick({
       dots: false,
       arrows: false,
       autoplay: true,
@@ -1264,11 +1255,10 @@
           slidesToShow: 1,
           variableWidth: true,
         },
-      }
-      ],
+      }],
     });
 
-      $(".markets_slider").slick({
+    $(".markets_slider").slick({
       dots: false,
       arrows: false,
       autoplay: true,
@@ -1288,8 +1278,7 @@
           slidesToShow: 1,
           variableWidth: true,
         },
-      }
-      ],
+      }],
     });
     $(".icon_slider").slick({
       dots: true,
@@ -1311,51 +1300,50 @@
           slidesToShow: 1,
           variableWidth: true,
         },
-      }
-      ],
+      }],
     });
 
-    $(document).ready(function() {
-    
-    $(".slider_section").hide();
-    $(".slider_section:first").show();
-    $(".btn").click(function() {
+    $(document).ready(function () {
+
+      $(".slider_section").hide();
+      $(".slider_section:first").show();
+      $(".btn").click(function () {
         var getAttr = $(this).attr("data-id");
         $(".slider_section").hide();
         $("#" + getAttr).show();
         $(".btn").removeClass("active");
         $(this).addClass("active");
         $('.product_slider_tab').slick('refresh');
-    });
+      });
 
 
-    $(".faq_section .faq_box > a").on("click", function() {
+      $(".faq_section .faq_box > a").on("click", function () {
         if ($(this).hasClass("active")) {
-            $(this).removeClass("active");
-            $(this)
-                .siblings(".content")
-                .slideUp(200);
-            $(".faq_box > a i")
-                .removeClass("fa-minus")
-                .addClass("fa-plus");
+          $(this).removeClass("active");
+          $(this)
+            .siblings(".content")
+            .slideUp(200);
+          $(".faq_box > a i")
+            .removeClass("fa-minus")
+            .addClass("fa-plus");
         } else {
-            $(".faq_box > a i")
-                .removeClass("fa-minus")
-                .addClass("fa-plus");
-            $(this)
-                .find("i")
-                .removeClass("fa-plus")
-                .addClass("fa-minus");
-            $(".faq_box > a").removeClass("active");
-            $(this).addClass("active");
-            $(".content").slideUp(200);
-            $(this)
-                .siblings(".content")
-                .slideDown(200);
+          $(".faq_box > a i")
+            .removeClass("fa-minus")
+            .addClass("fa-plus");
+          $(this)
+            .find("i")
+            .removeClass("fa-plus")
+            .addClass("fa-minus");
+          $(".faq_box > a").removeClass("active");
+          $(this).addClass("active");
+          $(".content").slideUp(200);
+          $(this)
+            .siblings(".content")
+            .slideDown(200);
         }
-    }); 
+      });
 
-    $(".product_slider_tab").slick({
+      $(".product_slider_tab").slick({
         dots: false,
         arrows: true,
         autoplay: false,
@@ -1366,107 +1354,106 @@
         swipeToSlide: true,
         prevArrow: '<img src="img/home/left_arrows.png" class="prev-arrow">',
         nextArrow: '<img src="img/home/right_arrows.png" class="next-arrow">',
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: {
-                  slidesToShow: 1,
-                  slidesToScroll: 1,
-                  arrows:false,
-                  autoplay: true,
-                speed: 1000,
-                autoplaySpeed: 1000,
-                variableWidth: true,
-                },
-            },
-        ],
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            autoplay: true,
+            speed: 1000,
+            autoplaySpeed: 1000,
+            variableWidth: true,
+          },
+        }, ],
+      });
     });
-  });
 
-  $(window).scroll(function() {
-    if ($('body').length) {
+    $(window).scroll(function () {
+      if ($('body').length) {
         var scrollTopPos = $(window).scrollTop();
         console.log(scrollTopPos);
         var scrollme = $(".what").offset().top - 350;
         console.log(scrollme);
         if (scrollTopPos > scrollme) {
-            $(document).ready(function() {
-                $('.what_text_1').addClass('what_text_animaction_l');
-            });
+          $(document).ready(function () {
+            $('.what_text_1').addClass('what_text_animaction_l');
+          });
 
-            setTimeout(function() {
-                $(document).ready(function() {
-                    $('.what_text_2').addClass('what_text_animaction');
-                });
-            }, 1000);
-            setTimeout(function() {
-                $(document).ready(function() {
-                    $('.what_text_3').addClass('what_text_animaction');
-                });
-            }, 500);
+          setTimeout(function () {
+            $(document).ready(function () {
+              $('.what_text_2').addClass('what_text_animaction');
+            });
+          }, 1000);
+          setTimeout(function () {
+            $(document).ready(function () {
+              $('.what_text_3').addClass('what_text_animaction');
+            });
+          }, 500);
         }
         var scrollme = $(".section_5").offset().top - 100;
         if (scrollTopPos > scrollme) {
-            $(document).ready(function() {
-                $('.roll_img_a').addClass('roll_scale');
+          $(document).ready(function () {
+            $('.roll_img_a').addClass('roll_scale');
+          });
+
+          setTimeout(function () {
+            $(document).ready(function () {
+              $('.box_1').addClass('bax_1_a');
             });
+          }, 100);
 
-            setTimeout(function() {
-                $(document).ready(function() {
-                    $('.box_1').addClass('bax_1_a');
-                });
-            }, 100);
-
-            setTimeout(function() {
-                $(document).ready(function() {
-                    $('.box_2').addClass('bax_2_a');
-                });
-            }, 100);
-            setTimeout(function() {
-                $(document).ready(function() {
-                    $('.box_3').addClass('bax_3_a');
-                });
-            }, 100);
-            setTimeout(function() {
-                $(document).ready(function() {
-                    $('.box_4').addClass('bax_4_a');
-                });
-            }, 100);
-            setTimeout(function() {
-                $(document).ready(function() {
-                    $('.box_5').addClass('bax_5_a');
-                });
-            }, 100);
+          setTimeout(function () {
+            $(document).ready(function () {
+              $('.box_2').addClass('bax_2_a');
+            });
+          }, 100);
+          setTimeout(function () {
+            $(document).ready(function () {
+              $('.box_3').addClass('bax_3_a');
+            });
+          }, 100);
+          setTimeout(function () {
+            $(document).ready(function () {
+              $('.box_4').addClass('bax_4_a');
+            });
+          }, 100);
+          setTimeout(function () {
+            $(document).ready(function () {
+              $('.box_5').addClass('bax_5_a');
+            });
+          }, 100);
         }
-    }
-});
+      }
+    });
 
-var navbarMenu = document.getElementById("menu");
-var burgerMenu = document.getElementById("burger");
-var bgOverlay = document.getElementById("overlay");
+    var navbarMenu = document.getElementById("menu");
+    var burgerMenu = document.getElementById("burger");
+    var bgOverlay = document.getElementById("overlay");
 
-// Show Menu when Click the Burger
-// Hide Menu when Click the Overlay
-if (burgerMenu && navbarMenu && bgOverlay) {
-    burgerMenu.addEventListener("click", function () {
+    // Show Menu when Click the Burger
+    // Hide Menu when Click the Overlay
+    if (burgerMenu && navbarMenu && bgOverlay) {
+      burgerMenu.addEventListener("click", function () {
         navbarMenu.classList.toggle("is-active");
         bgOverlay.classList.toggle("is-active");
         burgerMenu.classList.toggle("burgerMenuChange");
-    });
+      });
 
-    bgOverlay.addEventListener("click", function () {
+      bgOverlay.addEventListener("click", function () {
         navbarMenu.classList.toggle("is-active");
         bgOverlay.classList.toggle("is-active");
-    });
-}
+      });
+    }
 
-// Hide Menu when Click the Links
-document.querySelectorAll(".menu-link").forEach(function (link) {
-    link.addEventListener("click", function () {
+    // Hide Menu when Click the Links
+    document.querySelectorAll(".menu-link").forEach(function (link) {
+      link.addEventListener("click", function () {
         navbarMenu.classList.remove("is-active");
         bgOverlay.classList.remove("is-active");
+      });
     });
-});
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
