@@ -161,7 +161,7 @@
         </h4>
         <div class="types_section f_w">
           <div class="icon_box">
-            <div class="box f_w_a ptb_20 btn toTop active" data-scroll data-id="types1">
+            <div class="box f_w_a ptb_20 btn btn_one toTop active" data-scroll data-id="types1">
               <div class="icon">
                 <img src="img/home/icon_card_active.png" class="img-responsive margin_a">
                 <img src="img/home/icon_card_normal.png" class="img-responsive icon_normal">
@@ -173,7 +173,7 @@
                   <br>+ Pulp (CSP)</p>
               </div>
             </div>
-            <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types2">
+            <div class="box f_w_a ptb_20 btn btn_one toTop" data-scroll data-id="types2">
               <div class="icon">
                 <!-- <img src="img/home/card_pulp.png" class="img-responsive margin_a"> -->
                 <img src="img/home/card_pulp.png" class="img-responsive margin_a">
@@ -185,7 +185,7 @@
                 <p class="text_xs color_white">Card + Pulp (CP)</p>
               </div>
             </div>
-            <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types3">
+            <div class="box f_w_a ptb_20 btn btn_one toTop" data-scroll data-id="types3">
               <div class="icon">
                 <!-- <img src="img/home/pulp_icon.png" class="img-responsive margin_a"> -->
                 <img src="img/home/pulp_icon.png" class="img-responsive margin_a">
@@ -199,7 +199,7 @@
             </div>
           </div>
           <div class="icon_box">
-            <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types4">
+            <div class="box f_w_a ptb_20 btn btn_one toTop" data-scroll data-id="types4">
               <div class="icon">
                 <!-- <img src="img/home/carded_100.png" class="img-responsive margin_a"> -->
                 <img src="img/home/carded_100.png" class="img-responsive margin_a">
@@ -211,7 +211,7 @@
                 <p class="text_xs color_white">100% Carded</p>
               </div>
             </div>
-            <div class="box f_w_a ptb_20 btn toTop" data-scroll data-id="types5">
+            <div class="box f_w_a ptb_20 btn btn_one toTop" data-scroll data-id="types5">
               <div class="icon">
                 <!-- <img src="img/home/wet_laid.png" class="img-responsive margin_a"> -->
                 <img src="img/home/wet_laid.png" class="img-responsive margin_a">
@@ -948,10 +948,10 @@
         <div class="tab_section">
           <div class="button_style mob_tb_1 toTop " data-scroll>
             <h5 class="main_tab_btn f_w_a toTop" data-scroll>
-              <span class="btn text_xxs n_b active" data-id="founding" tabindex="0">Founding Team</span>
-              <span class="btn text_xxs n_b" data-id="promoters" tabindex="0">Promoters</span>
-              <span class="btn text_xxs n_b" data-id="technical" tabindex="0">Technical Personalities</span>
-              <span class="btn text_xxs n_b" data-id="other" tabindex="0">Other Renowned Personalities on Board</span>
+              <span class="btn btn_two text_xxs n_b active" data-id="founding" tabindex="0">Founding Team</span>
+              <span class="btn btn_two text_xxs n_b" data-id="promoters" tabindex="0">Promoters</span>
+              <span class="btn btn_two text_xxs n_b" data-id="technical" tabindex="0">Technical Personalities</span>
+              <span class="btn btn_two text_xxs n_b" data-id="other" tabindex="0">Other Renowned Personalities on Board</span>
             </h5>
           </div>
 
@@ -1193,11 +1193,11 @@
 
     $(".tab_contant").hide();
     $(".tab_contant:first").show();
-    $(".btn").click(function () {
+    $(".btn_one").click(function () {
       var getAttr = $(this).attr("data-id");
       $(".tab_contant").hide();
       $("#" + getAttr).show();
-      $(".btn").removeClass("active");
+      $(".btn_one").removeClass("active");
       $(this).addClass("active");
     });
 
@@ -1338,14 +1338,47 @@
 
       $(".slider_section").hide();
       $(".slider_section:first").show();
-      $(".btn").click(function () {
+      $(".btn_two").click(function () {
         var getAttr = $(this).attr("data-id");
         $(".slider_section").hide();
         $("#" + getAttr).show();
-        $(".btn").removeClass("active");
+        $(".btn_two").removeClass("active");
         $(this).addClass("active");
         $('.product_slider_tab').slick('refresh');
       });
+
+      // $('.tabs .tab_one li ').click(function () {
+      // if ($(this).attr('data-id') == 'founding' || $(this).attr('data-id') == 'promoters' ||
+      //     $(this).attr('data-id') == 'technical' || $(this).attr('data-id') ==
+      //     'other') {
+      //     setTimeout(function () {
+      //       $(".product_slider_tab").slick({
+      //         dots: false,
+      //         arrows: true,
+      //         autoplay: false,
+      //         slidesToShow: 4,
+      //         slidesToScroll: 1,
+      //         speed: 1000,
+      //         autoplaySpeed: 2000,
+      //         swipeToSlide: true,
+      //         prevArrow: '<img src="img/home/left_arrows.png" class="prev-arrow">',
+      //         nextArrow: '<img src="img/home/right_arrows.png" class="next-arrow">',
+      //         responsive: [{
+      //           breakpoint: 767,
+      //           settings: {
+      //             slidesToShow: 1,
+      //             slidesToScroll: 1,
+      //             arrows: false,
+      //             autoplay: true,
+      //             speed: 1000,
+      //             autoplaySpeed: 1000,
+      //             variableWidth: true,
+      //           },
+      //         }, ],
+      //       });
+      //     }, 500);
+      // }
+      // });
 
 
       $(".faq_section .faq_box > a").on("click", function () {
