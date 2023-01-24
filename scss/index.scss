@@ -138,7 +138,7 @@
         @extend .postion_absolute;
         transform: translateX(80px);
         p {
-          color: var(--primary_color);
+          color: var(--text_color);
         }
         // @media (max-width: 1450px) {
         //   top: 13vh;
@@ -153,7 +153,7 @@
         transition: linear 0.4s;
         @extend .postion_absolute;
         p {
-          color: var(--primary_color);
+          color: var(--text_color);
         }
         // @media (max-width: 1450px) {
         //   right: -31vh;
@@ -167,7 +167,7 @@
         @extend .postion_absolute;
         transform: translateY(80px);
         p {
-          color: var(--primary_color);
+          color: var(--text_color);
         }
         // @media (max-width: 1450px) {
         //   top: 20vh;

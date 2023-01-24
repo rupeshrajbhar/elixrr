@@ -1145,7 +1145,7 @@ footer {
     transition: linear 0.4s;
     transform: translateX(80px); }
     .section_3 .what .what_img .what_text_1 p {
-      color: var(--primary_color); }
+      color: var(--text_color); }
   .section_3 .what .what_img .what_text_2 {
     bottom: 30px;
     opacity: 0;
@@ -1153,7 +1153,7 @@ footer {
     transform: translateY(80px);
     transition: linear 0.4s; }
     .section_3 .what .what_img .what_text_2 p {
-      color: var(--primary_color); }
+      color: var(--text_color); }
   .section_3 .what .what_img .what_text_3 {
     top: 150px;
     opacity: 0;
@@ -1161,7 +1161,7 @@ footer {
     transition: linear 0.4s;
     transform: translateY(80px); }
     .section_3 .what .what_img .what_text_3 p {
-      color: var(--primary_color); }
+      color: var(--text_color); }
   .section_3 .what .what_img .what_text_animaction {
     opacity: 1;
     transform: translateY(0); }
