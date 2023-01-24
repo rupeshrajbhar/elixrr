@@ -106,12 +106,12 @@ section {
 
   --container_left_space: calc((100% - var(--container_width)) / 2);
 
-  --primary_color: #07408F;
+  --primary_color: #07408f;
   --secondary_color: #053474;
-  --tertiary_color: #E39E73;
-  --fourth_color:#FAF2E4;
-  --fifth_color:#053474;
-  --text_color: #47484A;
+  --tertiary_color: #e39e73;
+  --fourth_color: #faf2e4;
+  --fifth_color: #053474;
+  --text_color: #47484a;
   --color_white: #ffffff;
 }
 
@@ -1018,7 +1018,6 @@ h6 {
   will-change: transform;
 }
 
-
 .loader_overlay {
   position: fixed;
   left: 0;
@@ -1031,41 +1030,40 @@ h6 {
   transition: 2s ease;
 
   .container {
-      height: 100%;
+    height: 100%;
   }
 
   img {
-      max-width: 210px;
-      width: 210px;
-      position: absolute;
-      top: calc(50% - 67px);
-      left: calc(50% - 105px);
-      transition: 2s ease;
+    max-width: 210px;
+    width: 210px;
+    position: absolute;
+    top: calc(50% - 67px);
+    left: calc(50% - 105px);
+    transition: 2s ease;
   }
 
   &.start {
-      height: 83px;
+    height: 83px;
+
+    @media screen and (max-width: 991px) {
+      height: 65px;
+    }
+
+    img {
+      top: 15px;
+      left: 15px;
+      width: 153px;
+
+      @media screen and (max-width: 767px) {
+        // top: -2px !important;
+        left: 0px !important;
+      }
 
       @media screen and (max-width: 991px) {
-          height: 65px;
+        top: 9px;
+        left: 1px;
       }
-
-      img {
-          top: 15px;
-          left: 15px;
-          width: 153px;
-
-
-          @media screen and (max-width: 767px) {
-              // top: -2px !important;
-              left: 0px !important;
-          }
-
-          @media screen and (max-width: 991px) {
-              top: 9px;
-              left: 1px;
-          }
-      }
+    }
   }
 }
 

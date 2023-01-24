@@ -221,6 +221,9 @@
           }
           .text {
             opacity: 1 !important;
+            p {
+              color: var(--color_white) !important;
+            }
           }
           .icon_p {
             opacity: 0;
@@ -271,11 +274,14 @@
           }
           .text {
             width: 72%;
-            opacity: 0.4;
+            color: #67c4c7;
             padding-left: 20px;
             transition: linear 0.2s;
             @media (max-width: 767px) {
               padding-left: 15px;
+            }
+            p {
+              color: #67c4c7;
             }
           }
         }

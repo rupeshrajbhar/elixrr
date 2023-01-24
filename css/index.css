@@ -66,12 +66,12 @@ section {
   --transition: ease all 300ms;
   --headerHeight: 0px;
   --container_left_space: calc((100% - var(--container_width)) / 2);
-  --primary_color: #07408F;
+  --primary_color: #07408f;
   --secondary_color: #053474;
-  --tertiary_color: #E39E73;
-  --fourth_color:#FAF2E4;
-  --fifth_color:#053474;
-  --text_color: #47484A;
+  --tertiary_color: #e39e73;
+  --fourth_color: #faf2e4;
+  --fifth_color: #053474;
+  --text_color: #47484a;
   --color_white: #ffffff; }
   @media (min-width: 768px) and (max-width: 991px) {
     :root {
@@ -853,7 +853,8 @@ h6 {
   height: auto;
   z-index: 999;
   height: 83px;
-  background-color: var(--color_white); }
+  background-color: var(--color_white);
+  box-shadow: 0 0 14px -10px #333; }
   @media only screen and (max-width: 991px) {
     .header {
       height: 65px;
@@ -962,7 +963,7 @@ h6 {
           display: block;
           opacity: 1; } }
     .header .menu .active:before {
-      content: '';
+      content: "";
       width: 8px;
       height: 8px;
       left: 50%;
@@ -986,7 +987,7 @@ h6 {
       font-weight: normal;
       position: relative; }
       .header .menu-link:hover:before {
-        content: '';
+        content: "";
         width: 8px;
         height: 8px;
         left: 50%;
@@ -1203,6 +1204,8 @@ footer {
       opacity: 1 !important; }
     .section_4 .types .types_section .icon_box .active .text {
       opacity: 1 !important; }
+      .section_4 .types .types_section .icon_box .active .text p {
+        color: var(--color_white) !important; }
     .section_4 .types .types_section .icon_box .active .icon_p {
       opacity: 0; }
     .section_4 .types .types_section .icon_box .active .icon_n {
@@ -1239,12 +1242,14 @@ footer {
               width: 30px; } }
       .section_4 .types .types_section .icon_box .box .text {
         width: 72%;
-        opacity: 0.4;
+        color: #67c4c7;
         padding-left: 20px;
         transition: linear 0.2s; }
         @media (max-width: 767px) {
           .section_4 .types .types_section .icon_box .box .text {
             padding-left: 15px; } }
+        .section_4 .types .types_section .icon_box .box .text p {
+          color: #67c4c7; }
 
 .section_5 .title_info .title {
   width: 37%; }
