@@ -1027,18 +1027,18 @@ h6 {
   background: var(--color_white);
   z-index: 1000;
   padding: 0px 15px;
-  transition: 2s ease;
+  transition: 4s ease;
 
   .container {
     height: 100%;
   }
 
   img {
-    max-width: 210px;
-    width: 210px;
+    max-width: 304px;
+    width: 304px;
     position: absolute;
     top: calc(50% - 67px);
-    left: calc(50% - 105px);
+    left: calc(50% - 152px);
     transition: 2s ease;
   }
 
